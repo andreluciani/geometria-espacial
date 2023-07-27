@@ -1,0 +1,57 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+
+      - name: Install slidev
+        run: npm i -g @slidev/cli
+
+      - name: Add Umami script
+        run: touch index.html && node umami.js
+
+      - name: Build
+        run: slidev build --base /${{ github.event.repository.name }}
+
+      - uses: actions/configure-pages@v3
+
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2

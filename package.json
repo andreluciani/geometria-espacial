@@ -1,0 +1,19 @@
+{
+  "name": "geometria-espacial",
+  "private": true,
+  "scripts": {
+    "build": "rm -f index.html && touch index.html && node umami.js && slidev build",
+    "dev": "slidev",
+    "export": "slidev export",
+    "preview": "npm run -s build && npx vite preview"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.42.5",
+    "@slidev/theme-default": "latest",
+    "@slidev/theme-seriph": "latest",
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.36.1"
+  }
+}
