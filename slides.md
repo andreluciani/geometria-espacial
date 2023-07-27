@@ -36,11 +36,9 @@ Prof. André
 </div>
 
 ---
-
 layout: default
 hideInToc: true
 hide: true
-
 ---
 
 # Sumário
@@ -48,36 +46,26 @@ hide: true
 <Toc></Toc>
 
 ---
-
 src: ./pages/01-introducao/introducao.md
 hide: false
-
 ---
 
 ---
-
 src: ./pages/02-prismas/prismas.md
 hide: true
-
 ---
 
 ---
-
 src: ./pages/03-piramides/piramides.md
 hide: true
-
 ---
 
 ---
-
 src: ./pages/04-cilindro/cilindro.md
 hide: true
-
 ---
 
 ---
-
 src: ./pages/05-esfera/esfera.md
 hide: true
-
 ---
