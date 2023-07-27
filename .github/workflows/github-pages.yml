@@ -45,6 +45,8 @@ jobs:
 
       - name: Build
         run: slidev build --base /${{ github.event.repository.name }}
+        env:
+          UMAMI_WEBSITE_ID: ${{ vars.UMAMI_WEBSITE_ID }}
 
       - uses: actions/configure-pages@v3
 
