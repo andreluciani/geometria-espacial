@@ -1,6 +1,6 @@
 tasks:
   - name: Install Dependencies & Start
-    init: npm install
+    init: npm install && npx playwright install --with-deps && npm i -g @slidev/cli
     command: npm run dev
 
 ports:

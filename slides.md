@@ -4,7 +4,11 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Geometria Espacial
+  <p align="center">
+    <img src="/favicon.png" />
+    <h3 align="center">Geometria Espacial</h3>
+  </p>
+
   Conceitos, exemplos e exercícios.
 drawings:
   persist: true
@@ -12,7 +16,7 @@ download: true
 exportFilename: geometria-espacial
 transition: slide-left
 colorSchema: "light"
-favicon: "favicon.png"
+favicon: "/favicon.png"
 title: Geometria Espacial
 hideInToc: true
 ---
@@ -32,9 +36,11 @@ Prof. André
 </div>
 
 ---
+
 layout: default
 hideInToc: true
 hide: true
+
 ---
 
 # Sumário
@@ -42,26 +48,36 @@ hide: true
 <Toc></Toc>
 
 ---
+
 src: ./pages/01-introducao/introducao.md
 hide: false
+
 ---
 
 ---
+
 src: ./pages/02-prismas/prismas.md
 hide: true
+
 ---
 
 ---
+
 src: ./pages/03-piramides/piramides.md
 hide: true
+
 ---
 
 ---
+
 src: ./pages/04-cilindro/cilindro.md
 hide: true
+
 ---
 
 ---
+
 src: ./pages/05-esfera/esfera.md
 hide: true
+
 ---

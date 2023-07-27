@@ -11,6 +11,11 @@ fs.readFile(indexPath, 'utf8', (err, data) => {
         return;
     }
 
+    if (!process.env.UMAMI_WEBSITE_ID) {
+        console.warn('UMAMI_WEBSITE_ID not defined.');
+        return;
+    }
+
     const $ = cheerio.load(data);
     $('head').append(scriptToInject);
 
