@@ -11,13 +11,14 @@ info: |
 
   Conceitos, exemplos e exercícios.
 drawings:
-  persist: true
+  persist: false
 download: true
 exportFilename: geometria-espacial
 transition: slide-left
 colorSchema: "light"
 favicon: "/favicon.png"
 title: Geometria Espacial
+titleTemplate: '%s'
 hideInToc: true
 ---
 
