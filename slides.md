@@ -5,7 +5,7 @@ highlighter: shiki
 lineNumbers: false
 info: |
   <p align="center">
-    <img src="/favicon.png" />
+    <img src="/assets/logo.png" />
     <h3 align="center">Geometria Espacial</h3>
   </p>
 
