@@ -7,10 +7,16 @@ import {
     Points,
     PointsMaterial,
     Line,
-    LineBasicMaterial
+    LineBasicMaterial,
+    Mesh,
+    MeshBasicMaterial,
+    PlaneGeometry,
+    LineSegments,
+    EdgesGeometry
 } from "@janvorisek/drie";
 import { ref, Ref, reactive, onMounted } from 'vue'
 import {
+    DoubleSide,
     SRGBColorSpace,
     CustomBlending,
     TextureLoader as ThreeTextureLoader
@@ -35,18 +41,19 @@ onMounted(() => {
 });
 
 const lineVertices = reactive<number[]>([
-    5, -50, 0,
-    10, 50, 0,
+    -5, -5, 0,
+    5, 5, 0,
 ]);
 
 </script>
 
 <template>
     <div style="height: 40vh;" flex>
-        <div w-xl border="~ main rounded-lg">
+        <div m-1 w-xl border="~ main rounded-lg">
+            <div class="position-relative" style="top: 210px; left: 125px;">A</div>
             <Renderer :antialias="true">
                 <OrthographicCamera :position="[0, 100, 0]" :up="[1, 1, 0]">
-                    <OrbitControls :target="[0, 0, 0]" :enableRotate="false" />
+                    <OrbitControls :target="[0, 0, 0]" :enableRotate="false" :enablePan="false" />
                 </OrthographicCamera>
                 <Scene background="#ffffff">
                     <Points :position="[0, 0, 0]" :rotation="[Math.PI / 2, 0, 0]">
@@ -56,7 +63,8 @@ const lineVertices = reactive<number[]>([
                 </Scene>
             </Renderer>
         </div>
-        <div w-xl border="~ main rounded-lg">
+        <div m-1 w-xl border="~ main rounded-lg">
+            <div class="position-relative" style="top: 150px; left: 200px;">r</div>
             <Renderer :antialias="true">
                 <OrthographicCamera :position="[0, 100, 0]" :up="[1, 1, 0]">
                     <OrbitControls :target="[0, 0, 0]" :enableRotate="false" />
@@ -69,8 +77,24 @@ const lineVertices = reactive<number[]>([
                 </Scene>
             </Renderer>
         </div>
-        <div w-xl border="~ main rounded-lg">
-            3
+        <div m-1 w-xl border="~ main rounded-lg">
+            <div class="position-relative" style="top: 300px; left: 200px;">β</div>
+            <Renderer :antialias="true">
+                <OrthographicCamera :position="[10, 90, 120]">
+                    <OrbitControls />
+                </OrthographicCamera>
+                <Scene background="#ffffff">
+                    <Mesh :position="[0, 0, 0]" :rotation="[Math.PI / 2, 0, 0]">
+                        <MeshBasicMaterial color="#ccffcc" :side="DoubleSide" />
+                        <PlaneGeometry name="plane" :width="10" :height="10" />
+                        <!-- <GridHelper :position="[0, 0, 0]" :size="20" :divisions="20" /> -->
+                    </Mesh>
+                    <LineSegments :position="[0, 0, 0]" :rotation="[-Math.PI / 2, 0, 0]">
+                        <LineBasicMaterial color="black" />
+                        <EdgesGeometry geometry="plane" />
+                    </LineSegments>
+                </Scene>
+            </Renderer>
         </div>
     </div>
 </template>

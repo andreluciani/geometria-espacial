@@ -76,7 +76,6 @@ onMounted(() => {
                 <Mesh :position="[0, -2, 0]" :rotation="[Math.PI / 2, 0, 0]">
                     <MeshBasicMaterial color="#cfcfcf" :side="DoubleSide" />
                     <PlaneGeometry :width="2000" :height="2000" />
-                    <!-- <GridHelper :position="[0, -2, 0]" :size="40" :divisions="40" /> -->
                 </Mesh>
                 <Group enableRaycasting :onMouseEnter="onMouseEnter" :onMouseLeave="onMouseLeave">
                     <Group>
