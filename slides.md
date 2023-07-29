@@ -1,6 +1,6 @@
 ---
 theme: default
-background: /assets/platonic-solids.png
+# background: /assets/background.png
 class: text-center
 highlighter: shiki
 lineNumbers: false

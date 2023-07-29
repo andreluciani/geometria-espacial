@@ -25,8 +25,13 @@ layout: two-cols-center
 
 ## Afinal, o que é **Geometria Espacial**?
 
-É o estudo da geometria em um espaço
-**tridimensional**
+<v-clicks>
+
+- É o estudo da geometria em um espaço **tridimensional**
+
+- Se desenvolve a partir dos _conceitos primitivos_ (**ponto**, **reta** e **plano**), e da definição do **espaço**
+
+</v-clicks>
 
 ::right::
 
@@ -39,4 +44,10 @@ layout: center
 ## Geometria Plana
 
 <PlaneGeometry />
+
+---
+
+## Ponto, Reta e Plano
+
+<PointLinePlane />
 
