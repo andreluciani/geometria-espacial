@@ -9,7 +9,7 @@
 - [ ] Projeções Ortogonais
 
 ---
-layout: two-cols
+layout: two-cols-center
 ---
 
 ## Afinal, o que é **Geometria Espacial**?
@@ -22,3 +22,15 @@ layout: two-cols
 <Solids />
 
 ---
+layout: center
+---
+
+## Geometria Plana
+
+<PlaneGeometry />
+
+---
+layout: end
+---
+
+# Dúvidas?

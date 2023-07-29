@@ -15,7 +15,7 @@ import {
     OrbitControls,
     EdgesGeometry,
     LineSegments,
-    GridHelper,
+    PerspectiveCamera,
     Group
 } from "@janvorisek/drie";
 import { ref, onMounted } from 'vue'
@@ -26,7 +26,9 @@ import {
     Mesh as TMesh,
     MeshBasicMaterial as TMeshBasicMaterial,
     BufferGeometry as TBufferGeometry,
-    Color // no conflict here
+    Color, // no conflict here
+    Fog,
+    Scene as TScene
 } from "three";
 
 // AXES REFERENCE
@@ -53,24 +55,28 @@ const rot = ref<[number, number, number]>([0, 0, 0]);
 //     angle += Math.PI / 100;
 //     rot.value = [0, angle, 0];
 // }, 100);
-
-
+const sceneRef = ref(null)
+onMounted(() => {
+    if (sceneRef.value) {
+        sceneRef.value.three.fog = new Fog(0x00ffff, 150, 300);
+    }
+});
 
 </script>
 
 <template>
     <div style="width: 50vh; height: 50vh;" border="~ main rounded-lg">
         <Renderer :antialias="true">
-            <OrthographicCamera :position="[5, 5, 5]">
+            <OrthographicCamera :position="[100, 100, 100]" :lookAt="[2, 2, 2]">
                 <OrbitControls />
             </OrthographicCamera>
-            <Scene background="#ffffff">
+            <Scene ref="sceneRef" background="#cfcfcf">
                 <AmbientLight :position="[0, 4, 4]" :intensity="1" />
                 <!-- Base Plane -->
                 <Mesh :position="[0, -2, 0]" :rotation="[Math.PI / 2, 0, 0]">
                     <MeshBasicMaterial color="#cfcfcf" :side="DoubleSide" />
-                    <PlaneGeometry :width="40" :height="40" />
-                    <GridHelper :position="[0, -2, 0]" :size="40" :divisions="40" />
+                    <PlaneGeometry :width="2000" :height="2000" />
+                    <!-- <GridHelper :position="[0, -2, 0]" :size="40" :divisions="40" /> -->
                 </Mesh>
                 <Group enableRaycasting :onMouseEnter="onMouseEnter" :onMouseLeave="onMouseLeave">
                     <Group>
