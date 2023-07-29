@@ -43,9 +43,9 @@ hideInToc: true
 hide: true
 ---
 
-# Sumário
+# Introdução
 
-<Toc></Toc>
+<Toc minDepth="2" />
 
 ---
 src: ./pages/01-introducao/introducao.md

@@ -1,7 +1,7 @@
 ---
 layout: two-cols
 ---
-# Introdução
+## Introdução
 
 - [ ] Definição
 - [ ] Conceitos de Geometria Plana
@@ -51,3 +51,28 @@ layout: center
 
 <PointLinePlane />
 
+---
+
+## Dimensões
+
+### Adimensional e Unidimensional (1D)
+
+---
+
+## Dimensões
+
+### Bidimensional
+
+---
+
+## Polígonos
+
+<v-clicks>
+
+- Definidos por segmentos de reta
+
+- 3 pontos consecutivos que definem os segmentos não podem ser colineares
+
+</v-clicks>
+
+---

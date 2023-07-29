@@ -60,7 +60,7 @@ onMounted(() => {
 </script>
 
 <template>
-    <div style="width: 70vh; height: 40vh;" border="~ main rounded-lg">
+    <div style="width: 70vh; height: 40vh;" border="~ main rounded-lg" overflow-hidden>
         <Renderer :antialias="true">
             <OrthographicCamera :position="[0, 100, 0]" :up="[1, 1, 0]">
                 <OrbitControls :target="[0, 0, 0]" :enableRotate="false" />

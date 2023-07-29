@@ -48,8 +48,8 @@ const lineVertices = reactive<number[]>([
 </script>
 
 <template>
-    <div style="height: 40vh;" flex>
-        <div m-1 w-xl border="~ main rounded-lg">
+    <div style="height: 38vh;" flex>
+        <div m-1 w-xl border="~ main rounded-lg"  overflow-hidden>
             <div class="position-relative" style="top: 210px; left: 125px;">A</div>
             <Renderer :antialias="true">
                 <OrthographicCamera :position="[0, 100, 0]" :up="[1, 1, 0]">
@@ -63,7 +63,7 @@ const lineVertices = reactive<number[]>([
                 </Scene>
             </Renderer>
         </div>
-        <div m-1 w-xl border="~ main rounded-lg">
+        <div m-1 w-xl border="~ main rounded-lg"  overflow-hidden>
             <div class="position-relative" style="top: 150px; left: 200px;">r</div>
             <Renderer :antialias="true">
                 <OrthographicCamera :position="[0, 100, 0]" :up="[1, 1, 0]">
@@ -77,7 +77,7 @@ const lineVertices = reactive<number[]>([
                 </Scene>
             </Renderer>
         </div>
-        <div m-1 w-xl border="~ main rounded-lg">
+        <div m-1 w-xl border="~ main rounded-lg"  overflow-hidden>
             <div class="position-relative" style="top: 300px; left: 200px;">β</div>
             <Renderer :antialias="true">
                 <OrthographicCamera :position="[10, 90, 120]">
