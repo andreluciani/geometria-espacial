@@ -1,11 +1,12 @@
 ---
 theme: default
+background: /assets/platonic-solids.png
 class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
   <p align="center">
-    <img src="/assets/logo.png" />
+    <img src="/geometria-espacial/assets/logo.png" />
     <h3 align="center">Geometria Espacial</h3>
   </p>
 
