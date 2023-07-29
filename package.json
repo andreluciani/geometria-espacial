@@ -5,7 +5,7 @@
     "build": "rm -f index.html && touch index.html && node umami.js && slidev build",
     "dev": "slidev",
     "export": "slidev export",
-    "preview": "npx playwright install --with-deps && npm run -s build --base geometria-espacial && npx vite preview"
+    "preview": "npx playwright install --with-deps && npm run -s build && npx vite preview"
   },
   "dependencies": {
     "@janvorisek/drie": "^1.0.0-alpha-1.48",
