@@ -31,21 +31,24 @@ hideInToc: true
 Prof. André
 
 <div class="abs-br m-6 flex gap-2">
-  <a href="https://github.com/andreluciani/geometria-espacial" target="_blank" alt="GitHub"
+  <a href="https://github.com/andreluciani/geometria-espacial" target="_blank" alt="Código Fonte (GitHub)"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
+  </a>
+  <a href="https://andreluciani.github.io/geometria-espacial/" target="_blank" alt="GitHub"
+    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
+    <octicon-link-16 />
   </a>
 </div>
 
 ---
 layout: default
 hideInToc: true
-hide: true
 ---
 
 # Introdução
 
-<Toc minDepth="2" />
+<Toc maxDepth="1"></Toc>
 
 ---
 src: ./pages/01-introducao/introducao.md

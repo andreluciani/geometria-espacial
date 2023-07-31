@@ -4,7 +4,7 @@
   "scripts": {
     "build": "rm -f index.html && touch index.html && node umami.js && slidev build",
     "dev": "slidev",
-    "export": "slidev export",
+    "export": "slidev export --timeout 60000",
     "preview": "npx playwright install --with-deps && npm run -s build && npx vite preview"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@iconify-json/ci": "^1.1.9",
+    "@iconify-json/octicon": "^1.1.45",
     "@types/three": "^0.154.0",
     "playwright-chromium": "^1.36.1"
   }

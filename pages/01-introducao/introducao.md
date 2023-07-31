@@ -1,29 +1,8 @@
 ---
-layout: two-cols
----
-## Introdução
-
-- [ ] Definição
-- [ ] Conceitos de Geometria Plana
-    - [ ] Geral
-    - [ ] Ponto, Reta, Plano, Ângulos
-    - [ ] 0D, 1D (comprimento), 2D (área)
-    - [ ] Polígonos - perímetro e área
-    - [ ] Circunferência e Círculo - comprimento e área
-
-::right::
-
-- [ ] Conceitos de Geometria Espacial
-    - [ ] Poliedros
-    - [ ] Relação de Platão
-    - [ ] Corpos Redondos
-    - [ ] Projeções Ortogonais
-
----
 layout: two-cols-center
 ---
 
-## Afinal, o que é **Geometria Espacial**?
+# Afinal, o que é **Geometria Espacial**?
 
 <v-clicks>
 
@@ -41,7 +20,7 @@ layout: two-cols-center
 layout: center
 ---
 
-## Geometria Plana
+# Geometria Plana
 
 <PlaneGeometry />
 
@@ -76,3 +55,46 @@ layout: center
 </v-clicks>
 
 ---
+
+## Polígonos
+
+- Perímetro e Área
+
+---
+
+## Circunferência e Círculo
+
+- Importante: Arco de circunferência e setor circular
+
+---
+
+## Circunferência e Círculo
+
+- Comprimento e Área
+
+---
+
+# Geometria Plana ➡️ Geometria Espacial
+
+<v-clicks>
+
+- 1D
+    - Perímetro
+    - Comprimento de circunferência e arco de circunferência
+
+- 2D
+    - Área de triângulo
+    - Área de quadrilátero
+    - Área de círculo e setor circular
+
+- Geral
+    - Conceitos primitivos
+    - Semelhança de triângulos (especialmente triangulos retângulos)
+
+</v-clicks>
+
+---
+layout: center
+---
+
+## Obrigado!
