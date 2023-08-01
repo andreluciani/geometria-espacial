@@ -14,44 +14,13 @@ import {
     LineSegments,
     Group
 } from "@janvorisek/drie";
-import { ref, onMounted } from 'vue'
+import { ref, Ref, onMounted } from 'vue'
 import { DoubleSide } from "three";
-import { Intersection } from "three/src/core/Raycaster"
-
-import {
-    Mesh as TMesh,
-    MeshBasicMaterial as TMeshBasicMaterial,
-    BufferGeometry as TBufferGeometry,
-    Color, // no conflict here
-    Fog,
-    Scene as TScene
-} from "three";
-
-// AXES REFERENCE
-// [X,Z,Y]
-
-const onMouseEnter = (is: Intersection<TMesh<TBufferGeometry, TMeshBasicMaterial>>[]) => {
-    if (!is[1]?.object) {
-        return
-    }
-    is[1].object.parent.children[0].material.color = new Color("red");
-};
-
-const onMouseLeave = (is: Intersection<TMesh<TBufferGeometry, TMeshBasicMaterial>>[]) => {
-    if (!is[1]?.object) {
-        return
-    }
-    is[1].object.parent.children[0].material.color = new Color("blue");
-};
+import { Fog } from "three";
 
 const rot = ref<[number, number, number]>([0, 0, 0]);
+const sceneRef = ref<Ref<typeof Scene> | null>(null)
 
-// let angle = 0;
-// window.setInterval(() => {
-//     angle += Math.PI / 100;
-//     rot.value = [0, angle, 0];
-// }, 100);
-const sceneRef = ref(null)
 onMounted(() => {
     if (sceneRef.value) {
         sceneRef.value.three.fog = new Fog(0x00ffff, 150, 300);
@@ -63,6 +32,7 @@ onMounted(() => {
 <template>
     <div style="width: 40vh; height: 40vh;" border="~ main rounded-lg" overflow-hidden>
         <Renderer :antialias="true">
+            <LineBasicMaterial name="baseOutline" ref="lineRef" />
             <OrthographicCamera :position="[100, 100, 100]" :lookAt="[0, 0, 0]">
                 <OrbitControls />
             </OrthographicCamera>
@@ -73,7 +43,7 @@ onMounted(() => {
                     <MeshBasicMaterial color="#cfcfcf" :side="DoubleSide" />
                     <PlaneGeometry :width="2000" :height="2000" />
                 </Mesh>
-                <Group enableRaycasting :onMouseEnter="onMouseEnter" :onMouseLeave="onMouseLeave">
+                <Group>
                     <Group>
                         <!-- Prism -->
                         <Mesh :position="[12, 2.01, 12]" :rotation="rot">
