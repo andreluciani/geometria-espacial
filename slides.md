@@ -12,7 +12,7 @@ info: |
 
   Conceitos, exemplos e exercícios.
 drawings:
-  persist: false
+  persist: true
 download: true
 exportFilename: geometria-espacial
 transition: slide-left
