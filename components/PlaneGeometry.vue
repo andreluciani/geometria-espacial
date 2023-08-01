@@ -69,14 +69,14 @@ onMounted(() => {
                 <AmbientLight :position="[0, 4, 4]" :intensity="1" />
                 <!-- Base Plane -->
                 <Mesh :position="[0, 0, 0]" :rotation="[Math.PI / 2, 0, 0]">
-                    <MeshBasicMaterial color="#cfcfcf" :side="DoubleSide" />
+                    <MeshBasicMaterial color="#ededed" :side="DoubleSide" />
                     <PlaneGeometry :width="100" :height="100" />
                 </Mesh>
                 <Group>
                     <Group>
                         <!-- Square -->
                         <Mesh :position="[0, 0.01, 11]" :rotation="[-Math.PI / 2, 0, -Math.PI / 4]">
-                            <LineBasicMaterial color="purple" :side="DoubleSide" :transparent="true" :opacity="0.4" />
+                            <LineBasicMaterial color="#f04848" :side="DoubleSide"  />
                             <CircleGeometry name="square" :radius="4" :segments="4" />
                         </Mesh>
                         <LineSegments :position="[0, 0.01, 11]" :rotation="[-Math.PI / 2, 0, -Math.PI / 4]">
@@ -87,7 +87,7 @@ onMounted(() => {
                     <Group>
                         <!-- Circle -->
                         <Mesh :position="[3, 0.01, 3]" :rotation="[-Math.PI / 2, 0, 0]">
-                            <MeshBasicMaterial color="blue" :side="DoubleSide" :transparent="true" :opacity="0.4" />
+                            <MeshBasicMaterial color="#ffd166" :side="DoubleSide"  />
                             <CircleGeometry name="circle" :radius="3" />
                         </Mesh>
                         <LineSegments :position="[3, 0.01, 3]" :rotation="[-Math.PI / 2, 0, 0]">
@@ -98,7 +98,7 @@ onMounted(() => {
                     <Group>
                         <!-- Circular Sector -->
                         <Mesh :position="[0, 0.01, -3]" :rotation="[-Math.PI / 2, 0, 0]">
-                            <MeshBasicMaterial color="green" :side="DoubleSide" :transparent="true" :opacity="0.4" />
+                            <MeshBasicMaterial color="#06d6a0" :side="DoubleSide"  />
                             <CircleGeometry name="circular-sector" :radius="6" :thetaLength="Math.PI / 6" />
                         </Mesh>
                         <LineSegments :position="[0, 0.01, -3]" :rotation="[-Math.PI / 2, 0, 0]">
@@ -109,7 +109,7 @@ onMounted(() => {
                     <Group>
                         <!-- Hexagon -->
                         <Mesh :position="[-5, 0.01, -5]" :rotation="[-Math.PI / 2, 0, -Math.PI / 2]">
-                            <MeshBasicMaterial color="pink" :side="DoubleSide" :transparent="true" :opacity="0.4" />
+                            <MeshBasicMaterial color="#118ab2" :side="DoubleSide"  />
                             <CircleGeometry name="hexagon" :radius="3" :segments="6" />
                         </Mesh>
                         <LineSegments :position="[-5, 0.01, -5]" :rotation="[-Math.PI / 2, 0, -Math.PI / 2]">
@@ -124,7 +124,7 @@ onMounted(() => {
                             <BufferGeometry name="line" :vertices="lineVertices" />
                         </Line>
                         <Line :position="[0, 0.01, 0]" :rotation="[Math.PI / 2, 0, 0]">
-                            <LineBasicMaterial :color="0x0000ff" />
+                            <LineBasicMaterial :color="0x073b4c" />
                             <BufferGeometry name="lineTwo" :vertices="lineTwoVertices" />
                         </Line>
                     </Group>
@@ -153,7 +153,7 @@ onMounted(() => {
                     <Group>
                         <!-- Triangle -->
                         <Mesh :position="[3, 0.01, -10]" :rotation="[-Math.PI / 2, 0, -Math.PI * 2]">
-                            <LineBasicMaterial color="cyan" :side="DoubleSide" :transparent="true" :opacity="0.4" />
+                            <LineBasicMaterial color="#073b4c" :side="DoubleSide"  />
                             <CircleGeometry name="triangle" :radius="3" :segments="3" />
                         </Mesh>
                         <LineSegments :position="[3, 0.01, -10]" :rotation="[-Math.PI / 2, 0, -Math.PI * 2]">
