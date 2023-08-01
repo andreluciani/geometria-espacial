@@ -10,6 +10,8 @@ layout: two-cols-center
 
 - Se desenvolve a partir dos _conceitos primitivos_ (**ponto**, **reta** e **plano**), e da definição do **espaço**
 
+- A principal medida que surge na geometria espacial é o **volume**
+
 </v-clicks>
 
 ::right::

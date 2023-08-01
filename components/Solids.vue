@@ -1,21 +1,17 @@
 <script setup lang="ts">
 import { Renderer, Scene } from "@janvorisek/drie";
 import {
-    MeshNormalMaterial,
     ConeGeometry,
-    MeshLambertMaterial,
     Mesh, MeshBasicMaterial,
     BoxGeometry,
     PlaneGeometry,
     CylinderGeometry,
     AmbientLight,
     LineBasicMaterial,
-    LineLoop,
     OrthographicCamera,
     OrbitControls,
     EdgesGeometry,
     LineSegments,
-    PerspectiveCamera,
     Group
 } from "@janvorisek/drie";
 import { ref, onMounted } from 'vue'
@@ -67,61 +63,85 @@ onMounted(() => {
 <template>
     <div style="width: 40vh; height: 40vh;" border="~ main rounded-lg" overflow-hidden>
         <Renderer :antialias="true">
-            <OrthographicCamera :position="[100, 100, 100]" :lookAt="[2, 2, 2]">
+            <OrthographicCamera :position="[100, 100, 100]" :lookAt="[0, 0, 0]">
                 <OrbitControls />
             </OrthographicCamera>
             <Scene ref="sceneRef" background="#cfcfcf">
                 <AmbientLight :position="[0, 4, 4]" :intensity="1" />
                 <!-- Base Plane -->
-                <Mesh :position="[0, -2, 0]" :rotation="[Math.PI / 2, 0, 0]">
+                <Mesh :position="[0, 0, 0]" :rotation="[Math.PI / 2, 0, 0]">
                     <MeshBasicMaterial color="#cfcfcf" :side="DoubleSide" />
                     <PlaneGeometry :width="2000" :height="2000" />
                 </Mesh>
                 <Group enableRaycasting :onMouseEnter="onMouseEnter" :onMouseLeave="onMouseLeave">
                     <Group>
                         <!-- Prism -->
-                        <Mesh :position="[0, 0, 0]" :rotation="rot">
+                        <Mesh :position="[12, 2.01, 12]" :rotation="rot">
                             <MeshBasicMaterial color="blue" :transparent="true" :opacity="0.4" />
-                            <BoxGeometry name="prism" :width="5" :height="4" :depth="2" :widthSegments="1"
+                            <BoxGeometry name="prism" :width="5" :height="4" :depth="3" :widthSegments="1"
                                 :heightSegments="1" :depthSegments="1" />
                         </Mesh>
-                        <LineSegments :position="[0, 0, 0]" :rotation="rot">
+                        <LineSegments :position="[12, 2.01, 12]" :rotation="rot">
                             <LineBasicMaterial color="black" />
                             <EdgesGeometry geometry="prism" />
                         </LineSegments>
                     </Group>
                     <Group>
-                        <!-- Cone -->
-                        <Mesh :position="[0, 0, 8]" :rotation="rot">
+                        <!-- Square Frustum -->
+                        <Mesh :position="[12, 2.01, 0]" :rotation="[0, Math.PI / 4, 0]">
                             <MeshBasicMaterial color="blue" :transparent="true" :opacity="0.4" />
-                            <ConeGeometry name="cone" :radius="3" :height="4" />
+                            <CylinderGeometry name="square frustum" :radius-top="1.5" :radius-bottom="3" :height="4"
+                                :radial-segments="4" />
                         </Mesh>
-                        <LineSegments :position="[0, 0, 8]" :rotation="rot">
+                        <LineSegments :position="[12, 2.01, 0]" :rotation="[0, Math.PI / 4, 0]">
                             <LineBasicMaterial color="black" />
-                            <EdgesGeometry geometry="cone" />
+                            <EdgesGeometry geometry="square frustum" />
+                        </LineSegments>
+                    </Group>
+                    <Group>
+                        <!-- Pyramid -->
+                        <Mesh :position="[12, 2.01, -12]" :rotation="[0, Math.PI / 4, 0]">
+                            <MeshBasicMaterial color="blue" :transparent="true" :opacity="0.4" />
+                            <ConeGeometry name="pyramid" :radius="4" :height="4" :radialSegments="4" />
+                        </Mesh>
+                        <LineSegments :position="[12, 2.01, -12]" :rotation="[0, Math.PI / 4, 0]">
+                            <LineBasicMaterial color="black" />
+                            <EdgesGeometry geometry="pyramid" />
                         </LineSegments>
                     </Group>
                     <Group>
                         <!-- Cylinder -->
-                        <Mesh :position="[0, 0, -8]" :rotation="rot">
+                        <Mesh :position="[0, 2.01, 12]" :rotation="rot">
                             <MeshBasicMaterial color="blue" :transparent="true" :opacity="0.4" />
-                            <CylinderGeometry name="cylinder" :radius-top="2" :radius-bottom="2" :height="4"
+                            <CylinderGeometry name="cylinder" :radius-top="3" :radius-bottom="3" :height="4"
                                 :radial-segments="20" />
                         </Mesh>
-                        <LineSegments :position="[0, 0, -8]" :rotation="rot">
+                        <LineSegments :position="[0, 2.01, 12]" :rotation="rot">
                             <LineBasicMaterial color="black" />
                             <EdgesGeometry geometry="cylinder" />
                         </LineSegments>
                     </Group>
                     <Group>
-                        <!-- Pyramid -->
-                        <Mesh :position="[0, 0, -16]" :rotation="rot">
+                        <!-- Conical Frustum -->
+                        <Mesh :position="[0, 2.01, 0]" :rotation="rot">
                             <MeshBasicMaterial color="blue" :transparent="true" :opacity="0.4" />
-                            <ConeGeometry name="pyramid" :radius="3" :height="4" :radialSegments="4" />
+                            <CylinderGeometry name="conical frustum" :radius-top="1.5" :radius-bottom="3" :height="4"
+                                :radial-segments="20" />
                         </Mesh>
-                        <LineSegments :position="[0, 0, -16]" :rotation="rot">
+                        <LineSegments :position="[0, 2.01, 0]" :rotation="rot">
                             <LineBasicMaterial color="black" />
-                            <EdgesGeometry geometry="pyramid" />
+                            <EdgesGeometry geometry="conical frustum" />
+                        </LineSegments>
+                    </Group>
+                    <Group>
+                        <!-- Cone -->
+                        <Mesh :position="[0, 2.01, -12]" :rotation="rot">
+                            <MeshBasicMaterial color="blue" :transparent="true" :opacity="0.4" />
+                            <ConeGeometry name="cone" :radius="3" :height="4" />
+                        </Mesh>
+                        <LineSegments :position="[0, 2.01, -12]" :rotation="rot">
+                            <LineBasicMaterial color="black" />
+                            <EdgesGeometry geometry="cone" />
                         </LineSegments>
                     </Group>
                 </Group>
