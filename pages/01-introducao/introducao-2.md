@@ -2,7 +2,8 @@
 layout: two-cols-center
 ---
 
-# **Geometria Espacial** - Conceitos
+# Geometria Espacial
+## Conceitos
 
 <v-clicks>
 
@@ -19,10 +20,8 @@ layout: two-cols-center
 <Solids />
 
 ---
-layout: center
----
 
-# Polietros
+# Poliedros
 
 ---
 
@@ -38,63 +37,8 @@ layout: center
 
 ---
 
-## Dimensões
-
-### Bidimensional
+# Corpos Redondos
 
 ---
 
-## Polígonos
-
-<v-clicks>
-
-- Definidos por segmentos de reta
-
-- 3 pontos consecutivos que definem os segmentos não podem ser colineares
-
-</v-clicks>
-
----
-
-## Polígonos
-
-- Perímetro e Área
-
----
-
-## Circunferência e Círculo
-
-- Importante: Arco de circunferência e setor circular
-
----
-
-## Circunferência e Círculo
-
-- Comprimento e Área
-
----
-
-# Geometria Plana ➡️ Geometria Espacial
-
-<v-clicks>
-
-- 1D
-    - Perímetro
-    - Comprimento de circunferência e arco de circunferência
-
-- 2D
-    - Área de triângulo
-    - Área de quadrilátero
-    - Área de círculo e setor circular
-
-- Geral
-    - Conceitos primitivos
-    - Semelhança de triângulos (especialmente triangulos retângulos)
-
-</v-clicks>
-
----
-layout: center
----
-
-## Obrigado!
+# Projeções Ortogonais

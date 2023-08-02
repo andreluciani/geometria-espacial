@@ -64,3 +64,9 @@ hide: true
 src: ./pages/01-introducao/introducao-2.md
 hide: false
 ---
+
+---
+layout: center
+---
+
+## Obrigado!
