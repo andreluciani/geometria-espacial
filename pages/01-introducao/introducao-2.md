@@ -1,3 +1,7 @@
+# Quiz
+
+<Quiz />
+
 ---
 layout: two-cols-center
 ---
@@ -7,7 +11,7 @@ layout: two-cols-center
 
 <v-clicks>
 
-- Geometria Plana na "terceira" dimensão
+- A **terceira** dimensão
 
 - Volume
 
