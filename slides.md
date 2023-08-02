@@ -1,6 +1,5 @@
 ---
 theme: default
-# background: /assets/background.png
 class: text-center
 highlighter: shiki
 lineNumbers: false
@@ -11,10 +10,12 @@ info: |
   </p>
 
   Conceitos, exemplos e exercícios.
+
+  - [Código Fonte da Apresentação](https://github.com/andreluciani/geometria-espacial)
+  - [Slides - Aula 01/08/2023](/geometria-espacial/assets/pdf/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: true
-exportFilename: geometria-espacial
+download: /pdf/geometria-espacial-2023-08-01.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
