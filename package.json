@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@iconify-json/ci": "^1.1.9",
+    "@iconify-json/fa6-solid": "^1.1.13",
     "@iconify-json/octicon": "^1.1.45",
     "@types/three": "^0.154.0",
     "playwright-chromium": "^1.36.1"
