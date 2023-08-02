@@ -57,5 +57,10 @@ hideInToc: true
 
 ---
 src: ./pages/01-introducao/introducao.md
+hide: true
+---
+
+---
+src: ./pages/01-introducao/introducao-2.md
 hide: false
 ---
