@@ -1,6 +1,7 @@
 <script setup>
 import { shuffleArray, asyncTimeout } from "./utils"
 import { computed, ref, watch, reactive } from "vue"
+import ConfettiExplosion from "vue-confetti-explosion";
 
 const emit = defineEmits(['result'])
 const props = defineProps({
@@ -11,6 +12,7 @@ const props = defineProps({
 })
 
 const resultVisible = ref(false)
+const showConfetti = ref(false)
 const timer = reactive({
     elapsedTime: 100,
     id: null
@@ -61,8 +63,10 @@ async function solve(answer) {
     resultVisible.value = false
 
     if (answer.isCorrect) {
+        showConfetti.value = true
         emit('result', 'correct')
     } else {
+        showConfetti.value = false
         emit('result', 'wrong')
     }
 }
@@ -73,13 +77,10 @@ async function solve(answer) {
         <h4 v-html="props.question.question"></h4>
         <div>
             <div v-for="(answer, _) in     answers    " :key="answer.value" @click="solve(answer)"
-                :class="`${resultVisible && answer.isCorrect ? 'bg-green-300' : 'hover:text-cyan-800 hover:bg-gray-100 hover:font-bold cursor-pointer'}`"
+                :class="`${resultVisible && answer.isCorrect ? 'bg-green-300 overflow: visible' : 'hover:text-cyan-800 hover:bg-gray-100 hover:font-bold cursor-pointer'}`"
                 class="flex justify-evenly items-center">
+                <ConfettiExplosion class="absolute bottom-50 left-0 w-0 h-0" v-if="resultVisible && showConfetti && answer.isCorrect" />
                 <p v-html="answer.value"></p>
-            </div>
-        </div>
-        <div>
-            <div class="h-full bg-amber-400 transition-all duration-100" :style="{ width: (timer.elapsedTime) + '%' }">
             </div>
         </div>
     </div>

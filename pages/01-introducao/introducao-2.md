@@ -1,6 +1,6 @@
 # Quiz
 
-<Quiz questionsNumber="1" />
+<Quiz questionsNumber=1 />
 
 ---
 layout: two-cols-center

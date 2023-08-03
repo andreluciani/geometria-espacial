@@ -13,7 +13,8 @@
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "cheerio": "^1.0.0-rc.12",
-    "three": "^0.155.0"
+    "three": "^0.155.0",
+    "vue-confetti-explosion": "^1.0.2"
   },
   "devDependencies": {
     "@iconify-json/ci": "^1.1.9",
