@@ -1,15 +1,12 @@
 <script setup>
 import QuestionBox from "./QuestionBox.vue"
-import { reactive, onMounted, computed } from "vue"
-import { subtractDates } from "./utils"
+import { reactive, computed } from "vue"
 
 const emit = defineEmits(['finished'])
 
 const state = reactive({
     step: 0,
     score: 0,
-    isLoading: false,
-    startTime: null
 })
 
 const questions = [
@@ -17,29 +14,29 @@ const questions = [
         "type": "multiple",
         "difficulty": "hard",
         "question": "Question Statement",
-        "correct_answer": "Correct",
-        "incorrect_answers": ["Wrong", "Wrong", "Wrong"]
+        "correct_answer": "Correct1",
+        "incorrect_answers": ["Wrong1", "Wrong2", "Wrong3"]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
         "question": "Question Statement",
-        "correct_answer": "Correct",
-        "incorrect_answers": ["Wrong", "Wrong", "Wrong"]
+        "correct_answer": "Correct2",
+        "incorrect_answers": ["Two words", "And maybe more", "Wrong6"]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
         "question": "Question Statement",
-        "correct_answer": "Correct",
-        "incorrect_answers": ["Wrong", "Wrong", "Wrong"]
+        "correct_answer": "Correct3",
+        "incorrect_answers": ["Wrong7", "Wrong8", "Wrong9"]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
         "question": "Question Statement",
-        "correct_answer": "Correct",
-        "incorrect_answers": ["Wrong", "Wrong", "Wrong"]
+        "correct_answer": "Correct4",
+        "incorrect_answers": ["Wrong10", "Wrong11", "Wrong12"]
     },
     {
         "type": "boolean",
@@ -51,11 +48,6 @@ const questions = [
 ]
 const currentQuestion = computed(() => (questions[state.step]))
 
-onMounted(async () => {
-    state.isLoading = false
-    state.startTime = new Date()
-})
-
 function nextQuestion(result) {
     if (result === 'correct') {
         state.score++
@@ -63,8 +55,7 @@ function nextQuestion(result) {
 
     if (++state.step === questions.length) {
         emit('finished', {
-            score: state.score,
-            time: subtractDates(state.startTime, new Date())
+            score: state.score
         })
     }
 }
@@ -75,7 +66,7 @@ function nextQuestion(result) {
 <template>
     <div>
         <div>
-            <h2>Question #{{ state.step + 1 }} </h2>
+            <h3>Questão {{ state.step + 1 }} de {{ questions.length }}</h3>
             <QuestionBox @result="nextQuestion" :question="currentQuestion" />
         </div>
     </div>

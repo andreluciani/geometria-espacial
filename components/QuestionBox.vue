@@ -1,5 +1,5 @@
 <script setup>
-import { generateRndColor, shuffleArray, asyncTimeout } from "./utils"
+import { shuffleArray, asyncTimeout } from "./utils"
 import { computed, ref, watch, reactive } from "vue"
 
 const emit = defineEmits(['result'])
@@ -15,7 +15,6 @@ const timer = reactive({
     elapsedTime: 100,
     id: null
 })
-const colors = ref([])
 
 const answers = computed(() => {
     let list = [
@@ -37,7 +36,6 @@ watch(() => props.question.question, onUpdateQuestion, {
 
 function onUpdateQuestion() {
     startTimer()
-    colors.value = answers.value.map(generateRndColor)
 }
 function startTimer() {
     if (timer.id === null) {
@@ -58,7 +56,7 @@ function stopTimer() {
 async function solve(answer) {
     stopTimer()
     resultVisible.value = true
-    await asyncTimeout(2000)
+    await asyncTimeout(10000)
     resultVisible.value = false
 
     if (answer.isCorrect) {
@@ -71,14 +69,12 @@ async function solve(answer) {
 
 <template>
     <div>
-        <h1 :class="{ 'text-gray-400': resultVisible }" class="text-3xl transition-colors duration-150 select-none"
-            v-html="props.question.question" />
+        <h4 v-html="props.question.question"></h4>
         <div>
-            <div v-for="(answer, index) in  answers " :key="answer.value" :style="{ backgroundColor: colors[index] }"
-                @click="solve(answer)" :class="{ 'hover:scale-110 hover:text-black cursor-pointer': !resultVisible }"
-                class="min-h-[150px] w-full mx-3 p-3 transition-all duration-150 text-white flex justify-around items-center">
-                <p :class="answer.value.length > 16 ? 'text-md' : 'text-3xl text-center'" v-html="answer.value" />
-                <p v-if="resultVisible" v-html="`${ answer.isCorrect ? 'correct' : 'wrong' }`"></p>
+            <div v-for="(answer, _) in     answers    " :key="answer.value" @click="solve(answer)"
+                :class="`${resultVisible && answer.isCorrect ? 'bg-green-300' : 'hover:text-cyan-800 hover:bg-gray-100 hover:font-bold cursor-pointer'}`"
+                class="flex justify-evenly items-center">
+                <p v-html="answer.value"></p>
             </div>
         </div>
         <div>

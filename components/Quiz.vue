@@ -21,10 +21,15 @@ function forwardToResult(res) {
     result.value = res
     currentStep.value = 'result'
 }
+
+function resetQuiz() {
+    result.value = 0
+    currentStep.value = 'questioning'
+}
 </script>
 
 <template>
     <main>
-        <component :is="currentComponent" v-bind="bindData" @finished="forwardToResult" />
+        <component :is="currentComponent" v-bind="bindData" @finished="forwardToResult" @reset="resetQuiz" />
     </main>
 </template>
