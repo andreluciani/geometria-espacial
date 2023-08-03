@@ -54,6 +54,7 @@ function stopTimer() {
 }
 
 async function solve(answer) {
+    if (resultVisible.value) return
     stopTimer()
     resultVisible.value = true
     await asyncTimeout(10000)
@@ -78,7 +79,7 @@ async function solve(answer) {
             </div>
         </div>
         <div>
-            <div class="h-full bg-amber-400 transition-all duration-100" :style=" { width: (timer.elapsedTime) + '%' } ">
+            <div class="h-full bg-amber-400 transition-all duration-100" :style="{ width: (timer.elapsedTime) + '%' }">
             </div>
         </div>
     </div>
