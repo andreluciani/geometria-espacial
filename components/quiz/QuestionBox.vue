@@ -59,7 +59,7 @@ async function solve(answer) {
     if (resultVisible.value) return
     stopTimer()
     resultVisible.value = true
-    await asyncTimeout(10000)
+    await asyncTimeout(5000)
     resultVisible.value = false
 
     if (answer.isCorrect) {
@@ -79,8 +79,11 @@ async function solve(answer) {
             <div v-for="(answer, _) in     answers    " :key="answer.value" @click="solve(answer)"
                 :class="`${resultVisible && answer.isCorrect ? 'bg-green-300 overflow: visible' : 'hover:text-cyan-800 hover:bg-gray-100 hover:font-bold cursor-pointer'}`"
                 class="flex justify-evenly items-center">
-                <ConfettiExplosion class="absolute bottom-50 left-0 w-0 h-0" v-if="resultVisible && showConfetti && answer.isCorrect" />
-                <p v-html="answer.value"></p>
+                <div>
+                    <ConfettiExplosion class="absolute z-50"
+                        v-if="resultVisible && showConfetti && answer.isCorrect" />
+                    <p class="z-0" v-html="answer.value"></p>
+                </div>
             </div>
         </div>
     </div>
