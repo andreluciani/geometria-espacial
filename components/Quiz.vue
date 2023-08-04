@@ -7,7 +7,7 @@ import quiz2 from "./quiz/quiz2.json"
 
 const props = defineProps({
     questionsNumber: {
-        type: Number,
+        type: String,
         required: true
     }
 })
@@ -25,10 +25,10 @@ const result = ref({})
 const bindData = computed(() => ({
     'result': {
         result: result.value,
-        total: questions[props.questionsNumber - 1].length
+        total: questions[parseInt(props.questionsNumber) - 1].length
     },
     'questioning': {
-        questions: questions[props.questionsNumber - 1]
+        questions: questions[parseInt(props.questionsNumber) - 1]
     }
 }[currentStep.value]))
 

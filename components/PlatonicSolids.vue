@@ -7,7 +7,7 @@ import {
     PlaneGeometry,
     CylinderGeometry,
     AmbientLight,
-    LineBasicMaterial,
+    PerspectiveCamera,
     OrthographicCamera,
     OrbitControls,
     EdgesGeometry,
@@ -16,10 +16,8 @@ import {
 } from "@janvorisek/drie";
 import Cube from "./platonic/Cube.vue"
 import { ref, Ref, onMounted } from 'vue'
-import { DoubleSide } from "three";
 import { Fog } from "three";
 
-const rot = ref<[number, number, number]>([0, 0, 0]);
 const sceneRef = ref<Ref<typeof Scene> | null>(null)
 
 onMounted(() => {
@@ -33,9 +31,9 @@ onMounted(() => {
 <template>
     <div style="width: 100%; height: 100%;" border="~ main rounded-lg" overflow-hidden>
         <Renderer :antialias="true">
-            <OrthographicCamera :position="[40, 100, 120]" :lookAt="[0, 0, 0]">
+            <PerspectiveCamera :position="[5,5,5]" :near="0.1" :far="1000">
                 <OrbitControls />
-            </OrthographicCamera>
+            </PerspectiveCamera>
             <Cube />
         </Renderer>
     </div>

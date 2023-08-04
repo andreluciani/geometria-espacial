@@ -1,44 +1,41 @@
 <script setup lang="ts">
 import { Scene } from "@janvorisek/drie";
 import {
-    ConeGeometry,
-    Mesh, MeshBasicMaterial,
+    Mesh,
+    MeshLambertMaterial,
     BoxGeometry,
-    PlaneGeometry,
-    CylinderGeometry,
-    AmbientLight,
+    DirectionalLight,
     LineBasicMaterial,
     EdgesGeometry,
     LineSegments,
-    Group
 } from "@janvorisek/drie";
-import { ref, Ref, onMounted } from 'vue'
-import { DoubleSide } from "three";
-import { Fog } from "three";
+import { ref } from "vue"
 
 const rot = ref<[number, number, number]>([0, 0, 0]);
-const sceneRef = ref<Ref<typeof Scene> | null>(null)
 
-onMounted(() => {
-    if (sceneRef.value) {
-        sceneRef.value.three.fog = new Fog(0x0c6987, 150, 300);
-    }
-});
+window.setInterval(() => {
+    const newAngle: [number, number, number] = [...rot.value];
+    newAngle[1] = newAngle[1] - 0.005
+    newAngle[2] = newAngle[2] - 0.002
+    rot.value = newAngle;
+}, 10);
 
 </script>
 
 <template>
-    <Scene ref="sceneRef" background="#ededed">
-        <AmbientLight :position="[0, 0, 0]" :intensity="1" />
-        <!-- Prism -->
+    <Scene background="#444444">
+        <DirectionalLight :position="[0, 200, 0]" :intensity="3" />
+        <DirectionalLight :position="[100, 200, 100]" :intensity="3" />
+        <DirectionalLight :position="[-100, -200, -100]" :intensity="3" />
+        <!-- Cube -->
         <Mesh :position="[0, 0, 0]" :rotation="rot">
-            <MeshBasicMaterial color="#118ab2" :transparent="true" :opacity="0.8" />
-            <BoxGeometry name="prism" :width="5" :height="5" :depth="5" :widthSegments="1" :heightSegments="1"
+            <MeshLambertMaterial color="#f04848" :transparent="true" :opacity="0.8" />
+            <BoxGeometry name="cube" :width="5" :height="5" :depth="5" :widthSegments="1" :heightSegments="1"
                 :depthSegments="1" />
         </Mesh>
         <LineSegments :position="[0, 0, 0]" :rotation="rot">
-            <LineBasicMaterial color="black" />
-            <EdgesGeometry geometry="prism" />
+            <LineBasicMaterial :color="0x000000" :transparent="true" :opacity="0.5" />
+            <EdgesGeometry geometry="cube" />
         </LineSegments>
     </Scene>
 </template>
