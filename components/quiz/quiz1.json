@@ -1,0 +1,16 @@
+[
+  {
+    "type": "multiple",
+    "difficulty": "hard",
+    "question": "Question Statement",
+    "correct_answer": "Correct1",
+    "incorrect_answers": ["Wrong1", "Wrong2", "Wrong3"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Question Statement",
+    "correct_answer": "Correct2",
+    "incorrect_answers": ["Two words", "And maybe more", "Wrong6"]
+  }
+]

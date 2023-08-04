@@ -2,7 +2,8 @@
 import QuestionsSteps from "./quiz/QuestionsSteps.vue"
 import ResultBox from "./quiz/ResultBox.vue"
 import { ref, computed } from "vue"
-import quiz1 from "./quiz1.json"
+import quiz1 from "./quiz/quiz1.json"
+import quiz2 from "./quiz/quiz2.json"
 
 const props = defineProps({
     questionsNumber: {
@@ -11,7 +12,7 @@ const props = defineProps({
     }
 })
 
-const questions = [quiz1]
+const questions = [quiz1, quiz2]
 
 const currentStep = ref('questioning')
 const currentComponent = computed(() => ({
@@ -23,7 +24,8 @@ const result = ref({})
 
 const bindData = computed(() => ({
     'result': {
-        result: result.value
+        result: result.value,
+        total: questions[props.questionsNumber - 1].length
     },
     'questioning': {
         questions: questions[props.questionsNumber - 1]
