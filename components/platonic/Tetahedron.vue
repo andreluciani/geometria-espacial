@@ -2,7 +2,7 @@
 import {
     Mesh,
     MeshLambertMaterial,
-    BoxGeometry,
+    ConeGeometry,
     LineBasicMaterial,
     EdgesGeometry,
     LineSegments,
@@ -33,15 +33,14 @@ window.setInterval(() => {
 </script>
 
 <template>
-    <!-- Cube -->
+    <!-- Tetahedron -->
     <Mesh :position="props.position" :rotation="rot">
-        <MeshLambertMaterial color="#ffd166" :transparent="true" :opacity="0.8" />
-        <BoxGeometry name="cube" :width="4" :height="4" :depth="4" :widthSegments="1" :heightSegments="1"
-            :depthSegments="1" />
+        <MeshLambertMaterial color="#f04848" :transparent="true" :opacity="0.8" />
+        <ConeGeometry name="tetahedron" :radius="10/3" :height="5" :radialSegments="3" />
     </Mesh>
     <LineSegments :position="props.position" :rotation="rot">
         <LineBasicMaterial :color="0x000000" :transparent="true" :opacity="0.5" />
-        <EdgesGeometry geometry="cube" />
+        <EdgesGeometry geometry="tetahedron" />
     </LineSegments>
 </template>
 
