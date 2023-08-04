@@ -1,18 +1,10 @@
 <script setup lang="ts">
-import { Renderer, Scene } from "@janvorisek/drie";
 import {
-    ConeGeometry,
-    Mesh, MeshBasicMaterial,
-    BoxGeometry,
-    PlaneGeometry,
-    CylinderGeometry,
-    AmbientLight,
+    Renderer,
+    Scene,
     PerspectiveCamera,
-    OrthographicCamera,
+    DirectionalLight,
     OrbitControls,
-    EdgesGeometry,
-    LineSegments,
-    Group
 } from "@janvorisek/drie";
 import Cube from "./platonic/Cube.vue"
 import { ref, Ref, onMounted } from 'vue'
@@ -31,10 +23,15 @@ onMounted(() => {
 <template>
     <div style="width: 100%; height: 100%;" border="~ main rounded-lg" overflow-hidden>
         <Renderer :antialias="true">
-            <PerspectiveCamera :position="[5,5,5]" :near="0.1" :far="1000">
+            <PerspectiveCamera :position="[8, 8, 8]" :near="0.1" :far="1000">
                 <OrbitControls />
             </PerspectiveCamera>
-            <Cube />
+            <Scene background="#444444">
+                <DirectionalLight :position="[0, 200, 0]" :intensity="3" />
+                <DirectionalLight :position="[100, 200, 100]" :intensity="3" />
+                <DirectionalLight :position="[-100, -200, -100]" :intensity="3" />
+                <Cube :position="[0, 0, 0]" />
+            </Scene>
         </Renderer>
     </div>
 </template>
