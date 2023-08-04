@@ -3,8 +3,8 @@
 <Quiz questionsNumber=2 />
 
 ---
-
-## layout: two-cols-center
+layout: two-cols-center
+---
 
 # Geometria Espacial
 
@@ -35,6 +35,8 @@
 ---
 
 # Poliedros de Platão
+
+<PlatonicSolids />
 
 ---
 
