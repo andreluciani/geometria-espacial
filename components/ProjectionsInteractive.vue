@@ -11,15 +11,37 @@ import {
     PlaneGeometry
 } from "@janvorisek/drie";
 import CubeInteractive from "./projections/CubeInteractive.vue"
-import { ref } from 'vue'
+import ConeInteractive from "./projections/ConeInteractive.vue"
+import { ref, computed } from 'vue'
 import { DoubleSide } from "three";
 
 const hideCube = ref<boolean>(false)
 const rotateSolid = ref<boolean>(false)
-const picked = ref<string>('Cube')
+const picked = ref<string>('cube')
 const axis = ref<string>('X')
 const resetRotation = ref<boolean>(false)
 
+const currentComponent = computed(() => ({
+    'cube': CubeInteractive,
+    'cone': ConeInteractive
+}[picked.value]))
+
+const bindData = computed(() => ({
+    'cube': {
+        position: [0, 0, 0],
+        hide: !hideCube.value,
+        rotate: rotateSolid.value,
+        rotationAxis: axis.value,
+        resetRotation: resetRotation.value,
+    },
+    'cone': {
+        position: [0, 0, 0],
+        hide: !hideCube.value,
+        rotate: rotateSolid.value,
+        rotationAxis: axis.value,
+        resetRotation: resetRotation.value,
+    }
+}[picked.value]))
 
 </script>
 
@@ -29,23 +51,23 @@ const resetRotation = ref<boolean>(false)
             <h5 class="text-sm mt-0 mb-0">Sólido Geométrico</h5>
             <div class="flex flex-wrap w-full max-h-15 gap-3 p-1">
                 <div class="flex items-center gap-1 text-sm">
-                    <input type="radio" id="cube" value="Cube" v-model="picked" />
+                    <input type="radio" id="cube" value="cube" v-model="picked" />
                     <label for="cube">Cubo</label>
                 </div>
                 <div class="flex items-center gap-1 text-sm">
-                    <input type="radio" id="cone" value="Cone" v-model="picked" />
+                    <input type="radio" id="cone" value="cone" v-model="picked" />
                     <label for="cone">Cone</label>
                 </div>
                 <div class="flex items-center gap-1 text-sm">
-                    <input type="radio" id="pyramid" value="Pyramid" v-model="picked" />
+                    <input type="radio" id="pyramid" value="pyramid" v-model="picked" />
                     <label for="pyramid">Pirâmide</label>
                 </div>
                 <div class="flex items-center gap-1 text-sm">
-                    <input type="radio" id="sphere" value="Sphere" v-model="picked" />
+                    <input type="radio" id="sphere" value="sphere" v-model="picked" />
                     <label for="sphere">Esfera</label>
                 </div>
                 <div class="flex items-center gap-1 text-sm">
-                    <input type="radio" id="cylinder" value="Cylinder" v-model="picked" />
+                    <input type="radio" id="cylinder" value="cylinder" v-model="picked" />
                     <label for="cylinder">Cilindro</label>
                 </div>
             </div>
@@ -121,8 +143,7 @@ const resetRotation = ref<boolean>(false)
                     <MeshStandardMaterial color="#ffffff" :side="DoubleSide" />
                     <PlaneGeometry :width="20" :height="20" />
                 </Mesh>
-                <CubeInteractive :position="[0, 0, 0]" :hide="hideCube" :rotate="rotateSolid" :rotationAxis="axis"
-                    :resetRotation="resetRotation" />
+                <component :is="currentComponent" v-bind="bindData" />
             </Scene>
         </Renderer>
     </div>
