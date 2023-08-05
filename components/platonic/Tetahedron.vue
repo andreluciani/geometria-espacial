@@ -26,7 +26,6 @@ const rot = ref<Array<number>>(props.initialRotation);
 window.setInterval(() => {
     const newAngle: Array<number> = [...rot.value];
     newAngle[1] = newAngle[1] - 0.002
-    // newAngle[2] = newAngle[2] - 0.002
     rot.value = newAngle;
 }, 10);
 
@@ -35,11 +34,11 @@ window.setInterval(() => {
 <template>
     <!-- Tetahedron -->
     <Mesh :position="props.position" :rotation="rot">
-        <MeshLambertMaterial color="#f04848" :transparent="true" :opacity="0.8" />
+        <MeshLambertMaterial color="#f04848" />
         <ConeGeometry name="tetahedron" :radius="10/3" :height="5" :radialSegments="3" />
     </Mesh>
     <LineSegments :position="props.position" :rotation="rot">
-        <LineBasicMaterial :color="0x000000" :transparent="true" :opacity="0.5" />
+        <LineBasicMaterial :color="0x000000" />
         <EdgesGeometry geometry="tetahedron" />
     </LineSegments>
 </template>

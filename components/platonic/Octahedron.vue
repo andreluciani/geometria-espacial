@@ -33,11 +33,9 @@ downRot.value = zRotation
 window.setInterval(() => {
     const newAngle: Array<number> = [...rot.value];
     newAngle[1] = newAngle[1] - 0.002
-    // newAngle[2] = newAngle[2] - 0.002
     rot.value = newAngle;
     const newDownAngle: Array<number> = [...downRot.value];
     newDownAngle[1] = newDownAngle[1] - 0.002
-    // newDownAngle[2] = newDownAngle[2] - 0.002
     downRot.value = newDownAngle;
 }, 10);
 
@@ -46,19 +44,19 @@ window.setInterval(() => {
 <template>
     <!-- Octahedron -->
     <Mesh :position="props.position" :rotation="rot">
-        <MeshLambertMaterial color="#06d6a0" :transparent="true" :opacity="0.8" />
+        <MeshLambertMaterial color="#06d6a0" />
         <ConeGeometry name="octahedron" :radius="3" :height="3" :radialSegments="4" :openEnded="true" />
     </Mesh>
     <LineSegments :position="props.position" :rotation="rot">
-        <LineBasicMaterial :color="0x000000" :transparent="true" :opacity="0.5" />
+        <LineBasicMaterial :color="0x000000" />
         <EdgesGeometry geometry="octahedron" />
     </LineSegments>
     <Mesh :position="downPosition" :rotation="downRot">
-        <MeshLambertMaterial color="#06d6a0" :transparent="true" :opacity="0.8" />
+        <MeshLambertMaterial color="#06d6a0" />
         <ConeGeometry name="octahedron-down" :radius="3" :height="3" :radialSegments="4" :openEnded="true" />
     </Mesh>
     <LineSegments :position="downPosition" :rotation="downRot">
-        <LineBasicMaterial :color="0x000000" :transparent="true" :opacity="0.5" />
+        <LineBasicMaterial :color="0x000000" />
         <EdgesGeometry geometry="octahedron-down" />
     </LineSegments>
 </template>

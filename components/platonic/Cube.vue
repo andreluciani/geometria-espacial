@@ -26,7 +26,6 @@ const rot = ref<Array<number>>(props.initialRotation);
 window.setInterval(() => {
     const newAngle: Array<number> = [...rot.value];
     newAngle[1] = newAngle[1] - 0.002
-    // newAngle[2] = newAngle[2] - 0.002
     rot.value = newAngle;
 }, 10);
 
@@ -35,12 +34,12 @@ window.setInterval(() => {
 <template>
     <!-- Cube -->
     <Mesh :position="props.position" :rotation="rot">
-        <MeshLambertMaterial color="#ffd166" :transparent="true" :opacity="0.8" />
+        <MeshLambertMaterial color="#ffd166" />
         <BoxGeometry name="cube" :width="4" :height="4" :depth="4" :widthSegments="1" :heightSegments="1"
             :depthSegments="1" />
     </Mesh>
     <LineSegments :position="props.position" :rotation="rot">
-        <LineBasicMaterial :color="0x000000" :transparent="true" :opacity="0.5" />
+        <LineBasicMaterial :color="0x000000" />
         <EdgesGeometry geometry="cube" />
     </LineSegments>
 </template>
