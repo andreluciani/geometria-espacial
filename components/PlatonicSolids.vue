@@ -2,7 +2,6 @@
 import {
     Renderer,
     Scene,
-    PerspectiveCamera,
     DirectionalLight,
     OrbitControls,
     OrthographicCamera
@@ -12,16 +11,6 @@ import Tetahedron from "./platonic/Tetahedron.vue"
 import Octahedron from "./platonic/Octahedron.vue"
 import Dodecahedron from "./platonic/Dodecahedron.vue"
 import Icosahedron from "./platonic/Icosahedron.vue"
-import { ref, Ref, onMounted } from 'vue'
-import { Fog } from "three";
-
-const sceneRef = ref<Ref<typeof Scene> | null>(null)
-
-onMounted(() => {
-    if (sceneRef.value) {
-        sceneRef.value.three.fog = new Fog(0x0c6987, 150, 300);
-    }
-});
 
 </script>
 

@@ -51,6 +51,7 @@ V -A + F = 2
 $$
 
 Em que:
+
 - $V$ é o número de **V**értices
 - $F$ é o número de **F**aces
 - $A$ é o número de **A**restas
@@ -83,3 +84,5 @@ Poliedros que respeitam essa relação são chamados **poliedros eulerianos**
 ---
 
 # Projeções Ortogonais
+
+<Projections />
