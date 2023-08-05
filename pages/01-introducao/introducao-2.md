@@ -28,6 +28,10 @@ layout: two-cols-center
 
 # Poliedros
 
+- Faces **poligonais**
+- Superfície: reunião das faces
+- Convexidade: faces são polígonos **convexos**
+
 ---
 layout: center
 ---
@@ -37,7 +41,13 @@ layout: center
 A relação de Euler é uma equação _sempre_ válida para poliedros **convexos**:
 
 $$
-V + F = A + 2
+\begin{array}{c}
+
+V + F = A + 2 \\
+
+V -A + F = 2
+
+\end{array}
 $$
 
 Em que:
@@ -45,9 +55,11 @@ Em que:
 - $F$ é o número de **F**aces
 - $A$ é o número de **A**restas
 
+Poliedros que respeitam essa relação são chamados **poliedros eulerianos**
+
 ---
 
-# Poliedros de Platão
+# Poliedros (regulares) de Platão
 
 <PlatonicSolids />
 
@@ -55,9 +67,18 @@ Em que:
 
 # Poliedros Regulares
 
+- Faces são polígonos **regulares** e **congruentes**
+- Ângulos poliédricos são **congruentes**
+
 ---
 
 # Corpos Redondos
+
+- Cilindro
+
+- Cone
+
+- Esfera
 
 ---
 
