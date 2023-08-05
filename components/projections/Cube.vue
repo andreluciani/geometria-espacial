@@ -18,6 +18,11 @@ const props = defineProps({
         type: Array<number>,
         required: false,
         default: () => [0, 0, 0]
+    },
+    hide: {
+        type: Boolean,
+        required: false,
+        default: () => false
     }
 })
 
@@ -35,12 +40,12 @@ window.setInterval(() => {
 <template>
     <!-- Cube -->
     <Mesh :position="props.position" :rotation="rot" :castShadow="true">
-        <MeshLambertMaterial color="#ffffff" />
+        <MeshLambertMaterial color="#ffffff" :transparent="hide" :opacity="hide ? 0 : 1" />
         <BoxGeometry name="cube" :width="4" :height="4" :depth="4" :widthSegments="1" :heightSegments="1"
             :depthSegments="1" />
     </Mesh>
     <LineSegments :position="props.position" :rotation="rot">
-        <LineBasicMaterial :color="0x000000" />
+        <LineBasicMaterial :color="0x000000" :transparent="hide" :opacity="hide ? 0 : 1" />
         <EdgesGeometry geometry="cube" />
     </LineSegments>
 </template>
