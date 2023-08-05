@@ -10,8 +10,14 @@ import {
     MeshLambertMaterial,
     PlaneGeometry
 } from "@janvorisek/drie";
-import CubeInteractive from "./projections/CubeInteractive.vue"
 import ConeInteractive from "./projections/ConeInteractive.vue"
+import ConicalFrustumInteractive from "./projections/ConicalFrustumInteractive.vue"
+import CubeInteractive from "./projections/CubeInteractive.vue"
+import CylinderInteractive from "./projections/CylinderInteractive.vue"
+import PyramidInteractive from "./projections/PyramidInteractive.vue"
+import SphereInteractive from "./projections/SphereInteractive.vue"
+import SquareFrustumInteractive from "./projections/SquareFrustumInteractive.vue"
+
 import { ref, computed } from 'vue'
 import { DoubleSide } from "three";
 
@@ -23,7 +29,12 @@ const resetRotation = ref<boolean>(false)
 
 const currentComponent = computed(() => ({
     'cube': CubeInteractive,
-    'cone': ConeInteractive
+    'cone': ConeInteractive,
+    'pyramid': PyramidInteractive,
+    'sphere': SphereInteractive,
+    'cylinder': CylinderInteractive,
+    'conical-frustum': ConicalFrustumInteractive,
+    'square-frustum': SquareFrustumInteractive
 }[picked.value]))
 
 const bindData = computed(() => ({
@@ -40,6 +51,41 @@ const bindData = computed(() => ({
         rotate: rotateSolid.value,
         rotationAxis: axis.value,
         resetRotation: resetRotation.value,
+    },
+    'pyramid': {
+        position: [0, 0, 0],
+        hide: !hideCube.value,
+        rotate: rotateSolid.value,
+        rotationAxis: axis.value,
+        resetRotation: resetRotation.value,
+    },
+    'sphere': {
+        position: [0, 0, 0],
+        hide: !hideCube.value,
+        rotate: rotateSolid.value,
+        rotationAxis: axis.value,
+        resetRotation: resetRotation.value,
+    },
+    'cylinder': {
+        position: [0, 0, 0],
+        hide: !hideCube.value,
+        rotate: rotateSolid.value,
+        rotationAxis: axis.value,
+        resetRotation: resetRotation.value,
+    },
+    'conical-frustum': {
+        position: [0, 0, 0],
+        hide: !hideCube.value,
+        rotate: rotateSolid.value,
+        rotationAxis: axis.value,
+        resetRotation: resetRotation.value,
+    },
+    'square-frustum': {
+        position: [0, 0, 0],
+        hide: !hideCube.value,
+        rotate: rotateSolid.value,
+        rotationAxis: axis.value,
+        resetRotation: resetRotation.value,
     }
 }[picked.value]))
 
@@ -50,25 +96,33 @@ const bindData = computed(() => ({
         <div class="w-1/2 text-center">
             <h5 class="text-sm mt-0 mb-0">Sólido Geométrico</h5>
             <div class="flex flex-wrap w-full max-h-15 gap-3 p-1">
-                <div class="flex items-center gap-1 text-sm">
+                <div class="flex items-center gap-1 text-xs">
                     <input type="radio" id="cube" value="cube" v-model="picked" />
                     <label for="cube">Cubo</label>
                 </div>
-                <div class="flex items-center gap-1 text-sm">
+                <div class="flex items-center gap-1 text-xs">
                     <input type="radio" id="cone" value="cone" v-model="picked" />
                     <label for="cone">Cone</label>
                 </div>
-                <div class="flex items-center gap-1 text-sm">
+                <div class="flex items-center gap-1 text-xs">
                     <input type="radio" id="pyramid" value="pyramid" v-model="picked" />
                     <label for="pyramid">Pirâmide</label>
                 </div>
-                <div class="flex items-center gap-1 text-sm">
+                <div class="flex items-center gap-1 text-xs">
                     <input type="radio" id="sphere" value="sphere" v-model="picked" />
                     <label for="sphere">Esfera</label>
                 </div>
-                <div class="flex items-center gap-1 text-sm">
+                <div class="flex items-center gap-1 text-xs">
                     <input type="radio" id="cylinder" value="cylinder" v-model="picked" />
                     <label for="cylinder">Cilindro</label>
+                </div>
+                <div class="flex items-center gap-1 text-xs">
+                    <input type="radio" id="conical-frustum" value="conical-frustum" v-model="picked" />
+                    <label for="conical-frustum">Tronco de Cone</label>
+                </div>
+                <div class="flex items-center gap-1 text-xs">
+                    <input type="radio" id="square-frustum" value="square-frustum" v-model="picked" />
+                    <label for="square-frustum">Tronco de Pirâmide</label>
                 </div>
             </div>
         </div>
