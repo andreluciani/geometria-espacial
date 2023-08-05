@@ -43,7 +43,7 @@ const hideCube = ref<boolean>(false)
                     <MeshStandardMaterial color="#ffffff" :side="DoubleSide" />
                     <PlaneGeometry :width="20" :height="20" />
                 </Mesh>
-                <Cube :position="[0, 0, 0]" :hide="hideCube" />
+                <Cube :position="[0, 0, 0]" :hide="!hideCube" />
             </Scene>
         </Renderer>
     </div>

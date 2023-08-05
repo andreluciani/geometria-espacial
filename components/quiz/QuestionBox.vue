@@ -33,7 +33,7 @@ const answers = computed(() => {
 async function solve(answer) {
     if (resultVisible.value) return
     resultVisible.value = true
-    await asyncTimeout(5000)
+    await asyncTimeout(3000)
     resultVisible.value = false
 
     if (answer.isCorrect) {

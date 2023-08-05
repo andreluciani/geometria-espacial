@@ -9,7 +9,7 @@
   {
     "type": "multiple",
     "difficulty": "easy",
-    "question": "Poliedros de Platão respeitam todas as condições abaixo, exceto:",
+    "question": "Poliedros de Platão sempre respeitam todas as condições abaixo, exceto:",
     "correct_answer": "As faces são polígonos regulares e congruentes",
     "incorrect_answers": [
       "A relação de Euler deve valer",

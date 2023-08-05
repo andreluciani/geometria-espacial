@@ -26,11 +26,15 @@ layout: two-cols-center
 
 ---
 
+## Dimensões
+
+### Tridimensional
+
+---
+
 # Sólidos Geométricos
 
-### Tridimensional (3D)
-
-- Poliedros e Corpos Redondos
+### Poliedros e Corpos Redondos
 
 ---
 
@@ -46,7 +50,7 @@ layout: center
 
 # Relação de Euler
 
-A relação de Euler é uma equação _sempre_ válida para poliedros **convexos**:
+- A relação de Euler é uma equação _sempre_ válida para poliedros **convexos**:
 
 $$
 \begin{array}{c}
@@ -68,7 +72,7 @@ Poliedros que respeitam essa relação são chamados **poliedros eulerianos**
 
 ---
 
-# Poliedros (regulares) de Platão
+# Poliedros de Platão
 
 <PlatonicSolids />
 
