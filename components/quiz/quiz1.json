@@ -9,7 +9,7 @@
   {
     "type": "multiple",
     "difficulty": "easy",
-    "question": "Selecione a alternativa que possui um elemento bidimensional",
+    "question": "Selecione a alternativa que possui um elemento bidimensional:",
     "correct_answer": "Setor Circular",
     "incorrect_answers": ["Vértice", "Semi-reta", "Aresta"]
   },

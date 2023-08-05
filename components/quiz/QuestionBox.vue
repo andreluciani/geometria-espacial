@@ -1,6 +1,6 @@
 <script setup>
 import { shuffleArray, asyncTimeout } from "./utils"
-import { computed, ref, watch, reactive } from "vue"
+import { computed, ref, reactive } from "vue"
 
 const emit = defineEmits(['result'])
 const props = defineProps({
@@ -30,34 +30,10 @@ const answers = computed(() => {
     return shuffleArray(list)
 })
 
-watch(() => props.question.question, onUpdateQuestion, {
-    immediate: true
-})
-
-function onUpdateQuestion() {
-    startTimer()
-}
-function startTimer() {
-    if (timer.id === null) {
-        timer.id = setInterval(() => {
-            if (--timer.elapsedTime <= 0) {
-                solve({ isCorrect: false })
-            }
-        }, 100)
-    }
-}
-
-function stopTimer() {
-    clearInterval(timer.id)
-    timer.id = null
-    timer.elapsedTime = 100
-}
-
 async function solve(answer) {
     if (resultVisible.value) return
-    stopTimer()
     resultVisible.value = true
-    await asyncTimeout(10000)
+    await asyncTimeout(5000)
     resultVisible.value = false
 
     if (answer.isCorrect) {

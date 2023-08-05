@@ -2,7 +2,7 @@
   {
     "type": "boolean",
     "difficulty": "easy",
-    "question": "Todo poliedro regular é um poliedro de Platão",
+    "question": "Todo poliedro regular é um poliedro de Platão.",
     "correct_answer": "Verdadeiro",
     "incorrect_answers": ["Falso"]
   },
