@@ -10,7 +10,7 @@ import {
     MeshLambertMaterial,
     PlaneGeometry
 } from "@janvorisek/drie";
-import Cube from "./projections/Cube.vue"
+import Cube from "./projections/CubeProjection.vue"
 import { ref } from 'vue'
 import { DoubleSide } from "three";
 

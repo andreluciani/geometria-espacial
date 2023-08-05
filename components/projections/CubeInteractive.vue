@@ -23,6 +23,21 @@ const props = defineProps({
         type: Boolean,
         required: false,
         default: () => false
+    },
+    rotate: {
+        type: Boolean,
+        required: false,
+        default: () => false
+    },
+    rotationAxis: {
+        type: String,
+        required: false,
+        default: () => 'X'
+    },
+    resetRotation: {
+        type: Boolean,
+        required: false,
+        default: () => false
     }
 })
 
@@ -30,8 +45,18 @@ const rot = ref<Array<number>>(props.initialRotation);
 
 window.setInterval(() => {
     const newAngle: Array<number> = [...rot.value];
-    newAngle[0] = newAngle[0] - 0.002
-    newAngle[1] = newAngle[1] - 0.002
+    if (props.rotate && props.rotationAxis === 'X') {
+        newAngle[0] = newAngle[0] - 0.002
+    } else if (props.rotate && props.rotationAxis === 'Y') {
+        newAngle[1] = newAngle[1] - 0.002
+    } else if (props.rotate && props.rotationAxis === 'Z') {
+        newAngle[2] = newAngle[2] - 0.002
+    }
+    if (props.resetRotation) {
+        newAngle[0] = 0
+        newAngle[1] = 0
+        newAngle[2] = 0
+    }
     rot.value = newAngle;
 }, 10);
 

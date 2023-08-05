@@ -89,6 +89,6 @@ Poliedros que respeitam essa relação são chamados **poliedros eulerianos**
 
 ---
 
-# Projeções - Interativo
+## Projeções - Interativo
 
 <ProjectionsInteractive />
