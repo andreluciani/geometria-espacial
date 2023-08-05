@@ -6,7 +6,7 @@ import {
     LineBasicMaterial
 } from "@janvorisek/drie";
 import { ref, Ref, onMounted } from "vue"
-import { Color, DodecahedronGeometry } from "three";
+import { DodecahedronGeometry } from "three";
 
 const props = defineProps({
     position: {

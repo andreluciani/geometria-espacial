@@ -26,6 +26,7 @@ hideInToc: true
 
 <!-- ./components/DrauuConfig.vue -->
 <DrauuConfig/>
+<Logo />
 
 # Geometria Espacial
 
