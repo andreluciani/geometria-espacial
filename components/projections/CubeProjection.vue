@@ -32,6 +32,7 @@ window.setInterval(() => {
     const newAngle: Array<number> = [...rot.value];
     newAngle[0] = newAngle[0] - 0.002
     newAngle[1] = newAngle[1] - 0.002
+    newAngle[2] = newAngle[2] - 0.002
     rot.value = newAngle;
 }, 10);
 

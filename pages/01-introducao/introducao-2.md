@@ -1,6 +1,6 @@
-# Quiz
+# Quiz - Recapitulando
 
-<Quiz questionsNumber=2 />
+<Quiz questionsNumber=1 />
 
 ---
 layout: two-cols-center

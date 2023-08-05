@@ -14,7 +14,7 @@ import Cube from "./projections/CubeProjection.vue"
 import { ref } from 'vue'
 import { DoubleSide } from "three";
 
-const hideCube = ref<boolean>(true)
+const hideCube = ref<boolean>(false)
 
 </script>
 

@@ -27,7 +27,11 @@ function reset() {
         <div>
             <h2>Resultado</h2>
             <ConfettiExplosion class="absolute z-50 left-40"
-                :colors="['#f04848', '#ffd166', '#06d6a0', '#118ab2', '#073b4c']" v-if="showConfetti" />
+                :colors="['#f04848', '#ffd166', '#06d6a0', '#118ab2', '#073b4c']" v-if="showConfetti"
+                :duration="8000"
+                :particleSize="12"
+                :particleCount="150"
+                :force="0.8" />
             <p>
                 Você respondeu
                 <strong>{{ props.result.score }}</strong>

@@ -57,7 +57,7 @@ async function solve(answer) {
     if (resultVisible.value) return
     stopTimer()
     resultVisible.value = true
-    await asyncTimeout(3000)
+    await asyncTimeout(10000)
     resultVisible.value = false
 
     if (answer.isCorrect) {

@@ -17,6 +17,7 @@ import CylinderInteractive from "./projections/CylinderInteractive.vue"
 import PyramidInteractive from "./projections/PyramidInteractive.vue"
 import SphereInteractive from "./projections/SphereInteractive.vue"
 import SquareFrustumInteractive from "./projections/SquareFrustumInteractive.vue"
+import LineInteractive from "./projections/LineInteractive.vue";
 
 import { ref, computed } from 'vue'
 import { DoubleSide } from "three";
@@ -34,55 +35,63 @@ const currentComponent = computed(() => ({
     'sphere': SphereInteractive,
     'cylinder': CylinderInteractive,
     'conical-frustum': ConicalFrustumInteractive,
-    'square-frustum': SquareFrustumInteractive
+    'square-frustum': SquareFrustumInteractive,
+    'line': LineInteractive
 }[picked.value]))
 
 const bindData = computed(() => ({
     'cube': {
         position: [0, 0, 0],
-        hide: !hideCube.value,
+        hide: hideCube.value,
         rotate: rotateSolid.value,
         rotationAxis: axis.value,
         resetRotation: resetRotation.value,
     },
     'cone': {
         position: [0, 0, 0],
-        hide: !hideCube.value,
+        hide: hideCube.value,
         rotate: rotateSolid.value,
         rotationAxis: axis.value,
         resetRotation: resetRotation.value,
     },
     'pyramid': {
         position: [0, 0, 0],
-        hide: !hideCube.value,
+        hide: hideCube.value,
         rotate: rotateSolid.value,
         rotationAxis: axis.value,
         resetRotation: resetRotation.value,
     },
     'sphere': {
         position: [0, 0, 0],
-        hide: !hideCube.value,
+        hide: hideCube.value,
         rotate: rotateSolid.value,
         rotationAxis: axis.value,
         resetRotation: resetRotation.value,
     },
     'cylinder': {
         position: [0, 0, 0],
-        hide: !hideCube.value,
+        hide: hideCube.value,
         rotate: rotateSolid.value,
         rotationAxis: axis.value,
         resetRotation: resetRotation.value,
     },
     'conical-frustum': {
         position: [0, 0, 0],
-        hide: !hideCube.value,
+        hide: hideCube.value,
         rotate: rotateSolid.value,
         rotationAxis: axis.value,
         resetRotation: resetRotation.value,
     },
     'square-frustum': {
         position: [0, 0, 0],
-        hide: !hideCube.value,
+        hide: hideCube.value,
+        rotate: rotateSolid.value,
+        rotationAxis: axis.value,
+        resetRotation: resetRotation.value,
+    },
+    'line': {
+        position: [0, 0, 0],
+        hide: hideCube.value,
         rotate: rotateSolid.value,
         rotationAxis: axis.value,
         resetRotation: resetRotation.value,
@@ -123,6 +132,10 @@ const bindData = computed(() => ({
                 <div class="flex items-center gap-1 text-xs">
                     <input type="radio" id="square-frustum" value="square-frustum" v-model="picked" />
                     <label for="square-frustum">Tronco de Pirâmide</label>
+                </div>
+                <div class="flex items-center gap-1 text-xs">
+                    <input type="radio" id="line" value="line" v-model="picked" />
+                    <label for="line">Aresta</label>
                 </div>
             </div>
         </div>
