@@ -11,30 +11,10 @@ import {
     PlaneGeometry
 } from "@janvorisek/drie";
 import Cube from "./projections/Cube.vue"
-import { ref, Ref, onMounted } from 'vue'
+import { ref } from 'vue'
 import { DoubleSide } from "three";
 
-const backWallRef = ref<Ref<typeof MeshStandardMaterial> | null>(null)
-const lightRef = ref<Ref<typeof DirectionalLight> | null>(null)
-const hideCube = ref<boolean>(false)
-
-onMounted(() => {
-    if (backWallRef.value) {
-        console.log(backWallRef.value.three)
-    }
-    if (lightRef.value) {
-        console.log(lightRef.value.three)
-    }
-});
-
-const height = ref<number>(0);
-
-window.setInterval(() => {
-    let newHeight: number = height.value;
-    newHeight += 0.05
-    height.value = newHeight;
-}, 10);
-
+const hideCube = ref<boolean>(true)
 
 </script>
 
@@ -63,7 +43,7 @@ window.setInterval(() => {
                     <MeshStandardMaterial color="#ffffff" :side="DoubleSide" />
                     <PlaneGeometry :width="20" :height="20" />
                 </Mesh>
-                <Cube :position="[0, 0, 0]" :hide="!hideCube" />
+                <Cube :position="[0, 0, 0]" :hide="hideCube" />
             </Scene>
         </Renderer>
     </div>
@@ -73,10 +53,9 @@ window.setInterval(() => {
             <div
                 class="w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
             </div>
-            <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-                {{ hideCube ? 'Esconder cubo' : 'Mostrar cubo' }}
-            </span>
-        </label>
-    </div>
-</template>
+        <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+            Alterar visibilidade
+        </span>
+    </label>
+</div></template>
 
