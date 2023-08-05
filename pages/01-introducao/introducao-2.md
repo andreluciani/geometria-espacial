@@ -26,6 +26,14 @@ layout: two-cols-center
 
 ---
 
+# Sólidos Geométricos
+
+### Tridimensional (3D)
+
+- Poliedros e Corpos Redondos
+
+---
+
 # Poliedros
 
 - Faces **poligonais**
@@ -92,3 +100,9 @@ Poliedros que respeitam essa relação são chamados **poliedros eulerianos**
 ## Projeções - Interativo
 
 <ProjectionsInteractive />
+
+---
+
+# Quiz
+
+<Quiz questionsNumber=2 />

@@ -1,6 +1,6 @@
 [
   {
-    "type": "multiple",
+    "type": "boolean",
     "difficulty": "easy",
     "question": "Na Geometria Espacial utilizamos conceitos da Geometria Plana.",
     "correct_answer": "Verdadeiro",
@@ -23,7 +23,7 @@
   {
     "type": "multiple",
     "difficulty": "easy",
-    "question": "Qual medida é excluisa da Geometria Espacial?",
+    "question": "Qual medida é exclusiva da Geometria Espacial?",
     "correct_answer": "Volume",
     "incorrect_answers": ["Comprimento", "Ângulo", "Área"]
   }
