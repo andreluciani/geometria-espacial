@@ -42,7 +42,8 @@ layout: two-cols-center
 
 - Faces **poligonais**
 - Superfície: reunião das faces
-- Convexidade: faces são polígonos **convexos**
+- Convexidade:
+    - Em poliedros convexos as faces são polígonos **convexos**
 
 ---
 layout: center
