@@ -1,0 +1,30 @@
+[
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Na Geometria Espacial utilizamos conceitos da Geometria Plana.",
+    "correct_answer": "Verdadeiro",
+    "incorrect_answers": ["Falso"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Selecione a alternativa que possui um elemento bidimensional:",
+    "correct_answer": "Setor Circular",
+    "incorrect_answers": ["Vértice", "Semi-reta", "Aresta"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Qual das seguintes formas não é um polígono?",
+    "correct_answer": "Círculo",
+    "incorrect_answers": ["Quadrado", "Pentágono", "Trapézio"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Qual medida é exclusiva da Geometria Espacial?",
+    "correct_answer": "Volume",
+    "incorrect_answers": ["Comprimento", "Ângulo", "Área"]
+  }
+]

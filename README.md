@@ -9,12 +9,12 @@ Slides utilizados para aulas de Geometria Espacial
 ### Introdução
 
 - [x] Conceitos de Geometria Plana
-- [ ] Conceitos de Geometria Espacial
-- [ ] Poliedros
-- [ ] Sólidos de Platão
-- [ ] Relação de Euler
-- [ ] Corpos Redondos
-- [ ] Projeções Ortogonais
+- [x] Conceitos de Geometria Espacial
+- [x] Poliedros
+- [x] Sólidos de Platão
+- [x] Relação de Euler
+- [x] Corpos Redondos
+- [x] Projeções Ortogonais
 
 ### Prismas
 

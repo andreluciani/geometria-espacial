@@ -1,0 +1,32 @@
+[
+  {
+    "type": "boolean",
+    "difficulty": "easy",
+    "question": "Todo poliedro regular é um poliedro de Platão.",
+    "correct_answer": "Verdadeiro",
+    "incorrect_answers": ["Falso"]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Poliedros de Platão sempre respeitam todas as condições abaixo, exceto:",
+    "correct_answer": "As faces são polígonos regulares e congruentes",
+    "incorrect_answers": [
+      "A relação de Euler deve valer",
+      "Todas as faces tem o mesmo número de arestas",
+      "Ângulos poliédricos têm o mesmo número de arestas"
+    ]
+  },
+  {
+    "type": "multiple",
+    "difficulty": "easy",
+    "question": "Qual forma geométrica não pode ser uma projeção ortogonal?",
+    "correct_answer": "Cilindro",
+    "incorrect_answers": [
+      "Segmento de Reta",
+      "Ponto",
+      "Triângulo",
+      "Setor Circular"
+    ]
+  }
+]
