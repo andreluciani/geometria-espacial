@@ -16,7 +16,7 @@ info: |
   - [Slides - Aula 01/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: /geometria-espacial/assets/geometria-espacial-2023-08-08.pdf
+download: /geometria-espacial/assets/geometria-espacial-2023-08-01.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
@@ -41,20 +41,11 @@ Prof. André
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <octicon-link-16 />
   </a>
-  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-08.pdf" target="_blank" alt="PDF"
+  <a href="/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf" target="_blank" alt="PDF"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <fa6-solid:file-pdf />
   </a>
 </div>
-
----
-layout: default
-hideInToc: true
----
-
-# Slides das Aulas Passadas
-
-- [Introdução - Parte 1](/introducao-pt1) - 01/08/2023
 
 ---
 layout: default
