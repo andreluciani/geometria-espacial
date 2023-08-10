@@ -52,6 +52,15 @@ layout: default
 hideInToc: true
 ---
 
+# Slides das Aulas Passadas
+
+- [Introdução - Parte 1](/geometria-espacial/introducao-pt1) - 01/08/2023
+
+---
+layout: default
+hideInToc: true
+---
+
 # Introdução
 
 <Toc maxDepth="1"></Toc>

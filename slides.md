@@ -54,7 +54,8 @@ hideInToc: true
 
 # Slides das Aulas Passadas
 
-- [Introdução - Parte 1](/introducao-pt1) - 01/08/2023
+- [Introdução - Parte 1](/geometria-espacial/introducao-pt1) - 01/08/2023
+- [Introdução - Parte 2](/geometria-espacial/introducao-pt2) - 08/08/2023
 
 ---
 layout: default
