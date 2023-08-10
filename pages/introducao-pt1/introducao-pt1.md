@@ -16,7 +16,7 @@ info: |
   - [Slides - Aula 01/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: /geometria-espacial/assets/geometria-espacial-2023-08-08.pdf
+download: /geometria-espacial/assets/geometria-espacial-2023-08-01.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
@@ -41,20 +41,11 @@ Prof. André
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <octicon-link-16 />
   </a>
-  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-08.pdf" target="_blank" alt="PDF"
+  <a href="/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf" target="_blank" alt="PDF"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <fa6-solid:file-pdf />
   </a>
 </div>
-
----
-layout: default
-hideInToc: true
----
-
-# Slides das Aulas Passadas
-
-- [Introdução - Parte 1](/introducao-pt1) - 01/08/2023
 
 ---
 layout: default
@@ -66,26 +57,18 @@ hideInToc: true
 <Toc maxDepth="1"></Toc>
 
 ---
-
-# Quiz - Recapitulando
-
-<Quiz questionsNumber=1 />
-
----
 layout: two-cols
 ---
 
-# Geometria Espacial
-
-## Conceitos
+# Afinal, o que é **Geometria Espacial**?
 
 <v-clicks>
 
-- A **terceira** dimensão
+- É o estudo da geometria em um espaço **tridimensional**
 
-- Volume
+- Se desenvolve a partir dos _conceitos primitivos_ (**ponto**, **reta** e **plano**), e da definição do **espaço**
 
-- Vértices, Arestas e Faces
+- A principal medida que surge na geometria espacial é o **volume**
 
 </v-clicks>
 
@@ -94,92 +77,81 @@ layout: two-cols
 <Solids />
 
 ---
-
-## Dimensões
-
-### Tridimensional
-
----
-
-# Sólidos Geométricos
-
-### Poliedros e Corpos Redondos
-
----
-
-# Poliedros
-
-- Faces **poligonais**
-- Superfície: reunião das faces
-- Convexidade:
-    - Em poliedros convexos as faces são polígonos **convexos**
-
----
 layout: center
 ---
 
-# Relação de Euler
+# Geometria Plana
 
-- A relação de Euler é uma equação _sempre_ válida para poliedros **convexos**:
-
-$$
-\begin{array}{c}
-
-V + F = A + 2 \\
-
-V -A + F = 2
-
-\end{array}
-$$
-
-Em que:
-
-- $V$ é o número de **V**értices
-- $F$ é o número de **F**aces
-- $A$ é o número de **A**restas
-
-Poliedros que respeitam essa relação são chamados **poliedros eulerianos**
+<PlaneGeometry />
 
 ---
 
-# Poliedros de Platão
+## Ponto, Reta e Plano
 
-<PlatonicSolids />
-
----
-
-# Poliedros Regulares
-
-- Faces são polígonos **regulares** e **congruentes**
-- Ângulos poliédricos são **congruentes**
+<PointLinePlane />
 
 ---
 
-# Corpos Redondos
+## Dimensões
 
-- Cilindro
-
-- Cone
-
-- Esfera
+### Adimensional e Unidimensional (1D)
 
 ---
 
-# Projeções Ortogonais
+## Dimensões
 
-<Projections />
-
----
-
-## Projeções - Interativo
-
-<ProjectionsInteractive />
+### Bidimensional
 
 ---
 
-# Quiz
+## Polígonos
 
-<Quiz questionsNumber=2 />
+<v-clicks>
+
+- Definidos por segmentos de reta
+
+- 3 pontos consecutivos que definem os segmentos não podem ser colineares
+
+</v-clicks>
+
+---
+
+## Polígonos
+
+- Perímetro e Área
+
+---
+
+## Circunferência e Círculo
+
+- Importante: Arco de circunferência e setor circular
+
+---
+
+## Circunferência e Círculo
+
+- Comprimento e Área
+
+---
+
+# Geometria Plana ➡️ Geometria Espacial
+
+<v-clicks>
+
+- 1D
+    - Perímetro
+    - Comprimento de circunferência e arco de circunferência
+
+- 2D
+    - Área de triângulo
+    - Área de quadrilátero
+    - Área de círculo e setor circular
+
+- Geral
+    - Conceitos primitivos
+    - Semelhança de triângulos (especialmente triangulos retângulos)
+
+</v-clicks>
 
 ---
 layout: center

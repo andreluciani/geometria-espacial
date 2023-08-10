@@ -97,7 +97,6 @@ window.addEventListener('keydown', (e) => {
     }
     else if (e.code === 'Minus' && (e.ctrlKey || e.metaKey)) {
         if (!drauuOptions.brush) {
-            console.log("Oh no... brush not defined")
             return
         }
         if (drauuOptions.brush.size > 0.5) {
