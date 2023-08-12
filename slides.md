@@ -12,17 +12,19 @@ info: |
   Conceitos, exemplos e exercícios.
 
   - [Código Fonte da Apresentação](https://github.com/andreluciani/geometria-espacial)
+  - [Slides - Aula 15/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-15.pdf)
   - [Slides - Aula 08/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-08.pdf)
   - [Slides - Aula 01/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: /geometria-espacial/assets/geometria-espacial-2023-08-08.pdf
+download: /geometria-espacial/assets/geometria-espacial-2023-08-15.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
 title: Geometria Espacial
 titleTemplate: '%s'
 hideInToc: true
+canvasWidth: 1200
 ---
 
 <DrauuConfig/>
@@ -41,7 +43,7 @@ Prof. André
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <octicon-link-16 />
   </a>
-  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-08.pdf" target="_blank" alt="PDF"
+  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-15.pdf" target="_blank" alt="PDF"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <fa6-solid:file-pdf />
   </a>
@@ -62,118 +64,69 @@ layout: default
 hideInToc: true
 ---
 
-# Introdução
+# Prismas
 
 <Toc maxDepth="1"></Toc>
-
----
-
-# Quiz - Recapitulando
-
-<Quiz questionsNumber=1 />
 
 ---
 layout: two-cols
 ---
 
-# Geometria Espacial
-
-## Conceitos
+# Prismas - Definição
 
 <v-clicks>
 
-- A **terceira** dimensão
+- Base
 
-- Volume
+- Altura
 
-- Vértices, Arestas e Faces
+- Face lateral
 
 </v-clicks>
 
 ::right::
 
+<!-- Adicionar exemplo de prisma -->
 <Solids />
 
 ---
 
-## Dimensões
+# Prismas - Nomenclatura
 
-### Tridimensional
-
----
-
-# Sólidos Geométricos
-
-### Poliedros e Corpos Redondos
+<!-- Adicionar definições: reto/oblíquo, regular, reto-retângulo, cubo -->
+<PlatonicSolids />
 
 ---
 
-# Poliedros
+# Prisma - Planificação e Áreas
 
-- Faces **poligonais**
-- Superfície: reunião das faces
-- Convexidade:
-    - Em poliedros convexos as faces são polígonos **convexos**
+<!-- Adicionar planificação e área interativa -->
+<ProjectionsInteractive />
+
 
 ---
 layout: center
 ---
 
-# Relação de Euler
-
-- A relação de Euler é uma equação _sempre_ válida para poliedros **convexos**:
+# Prismas - Volume
 
 $$
 \begin{array}{c}
-
-V + F = A + 2 \\
-
-V -A + F = 2
-
+V = A_{b}h
 \end{array}
 $$
 
 Em que:
 
-- $V$ é o número de **V**értices
-- $F$ é o número de **F**aces
-- $A$ é o número de **A**restas
-
-Poliedros que respeitam essa relação são chamados **poliedros eulerianos**
+- $V$ é o volume do prisma
+- $A_{b}$ é a área da base do prisma
+- $h$ é a altura do prisma
 
 ---
 
-# Poliedros de Platão
+# Prisma - Projeções
 
-<PlatonicSolids />
-
----
-
-# Poliedros Regulares
-
-- Faces são polígonos **regulares** e **congruentes**
-- Ângulos poliédricos são **congruentes**
-
----
-
-# Corpos Redondos
-
-- Cilindro
-
-- Cone
-
-- Esfera
-
----
-
-# Projeções Ortogonais
-
-<Projections />
-
----
-
-## Projeções - Interativo
-
+<!-- Adicionar projeções de prismas -->
 <ProjectionsInteractive />
 
 ---
@@ -181,6 +134,21 @@ Poliedros que respeitam essa relação são chamados **poliedros eulerianos**
 # Quiz
 
 <Quiz questionsNumber=2 />
+
+---
+
+# Extra - Tronco de Prisma
+
+<!-- Adicionar exemplo de tronco de prisma -->
+<ProjectionsInteractive />
+<!-- Cálculo de área ok, volume média aritimética das arestas -->
+
+---
+
+## Prisma - Área e Volume
+
+<!-- Adicionar área e volume interativos -->
+<ProjectionsInteractive />
 
 ---
 layout: center
