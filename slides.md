@@ -92,15 +92,13 @@ layout: two-cols
 
 # Prismas - Nomenclatura
 
-<!-- Adicionar definições: reto/oblíquo, regular, reto-retângulo, cubo -->
-<PlatonicSolids />
+<PrismsCategories />
 
 ---
 
 # Prisma - Planificação e Áreas
 
-<!-- Adicionar planificação e área interativa -->
-<ProjectionsInteractive />
+<PrismNet />
 
 
 ---
@@ -108,6 +106,8 @@ layout: center
 ---
 
 # Prismas - Volume
+
+Para calcular o volume de primas, utilizamos a fórmula:
 
 $$
 \begin{array}{c}
