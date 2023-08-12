@@ -86,8 +86,7 @@ layout: two-cols
 
 ::right::
 
-<!-- Adicionar exemplo de prisma -->
-<Solids />
+<Prisms />
 
 ---
 
