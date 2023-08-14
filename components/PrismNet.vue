@@ -11,7 +11,7 @@ import {
 } from "@janvorisek/drie";
 import TriangularNet from "./prism/TriangularNet.vue"
 
-import { ref, computed } from 'vue'
+import { ref, computed, reactive } from 'vue'
 import { DoubleSide } from "three";
 
 const plan = ref<boolean>(false)
@@ -22,13 +22,32 @@ const currentComponent = computed(() => ({
     'triangular': TriangularNet,
 }[picked.value]))
 
+const currentRotation = reactive({
+    facesRotation: 0,
+    topRotation: 0
+})
+
 const bindData = computed(() => ({
     'triangular': {
         position: [0, 0, 0],
         plan: plan.value,
         resetPlan: resetPlan.value,
+        facesRotation: currentRotation.facesRotation,
+        topRotation: currentRotation.topRotation
     }
 }[picked.value]))
+
+// const onBeforeRender = () => {
+//     const angle = Date.now() / 1000;
+//     currentRotation.facesRotation += angle
+//     currentRotation.topRotation += angle
+// };
+
+// window.setInterval(() => {
+//     const angle = Date.now() / 1000;
+//     currentRotation.facesRotation += angle
+//     currentRotation.topRotation += angle
+// }, 500);
 
 </script>
 
