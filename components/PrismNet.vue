@@ -10,6 +10,7 @@ import {
     PlaneGeometry
 } from "@janvorisek/drie";
 import TriangularNet from "./prism/TriangularNet.vue"
+import RectangularNet from "./prism/RectangularNet.vue";
 
 import { ref, computed, reactive } from 'vue'
 import { DoubleSide } from "three";
@@ -20,6 +21,7 @@ const resetPlan = ref<boolean>(false)
 
 const currentComponent = computed(() => ({
     'triangular': TriangularNet,
+    'rectangular': RectangularNet
 }[picked.value]))
 
 const currentRotation = reactive({
@@ -34,21 +36,15 @@ const bindData = computed(() => ({
         resetPlan: resetPlan.value,
         facesRotation: currentRotation.facesRotation,
         topRotation: currentRotation.topRotation
+    },
+    'rectangular': {
+        position: [0, 0, 0],
+        plan: plan.value,
+        resetPlan: resetPlan.value,
+        facesRotation: currentRotation.facesRotation,
+        topRotation: currentRotation.topRotation
     }
 }[picked.value]))
-
-// const onBeforeRender = () => {
-//     const angle = Date.now() / 1000;
-//     currentRotation.facesRotation += angle
-//     currentRotation.topRotation += angle
-// };
-
-// window.setInterval(() => {
-//     const angle = Date.now() / 1000;
-//     currentRotation.facesRotation += angle
-//     currentRotation.topRotation += angle
-// }, 500);
-
 </script>
 
 <template>
@@ -61,8 +57,8 @@ const bindData = computed(() => ({
                     <label for="triangular">Triangular</label>
                 </div>
                 <div class="flex items-center gap-1 text-xs">
-                    <input type="radio" id="retangular" value="retangular" v-model="picked" />
-                    <label for="retangular">Retangular</label>
+                    <input type="radio" id="retangular" value="rectangular" v-model="picked" />
+                    <label for="rectangular">Retangular</label>
                 </div>
             </div>
         </div>

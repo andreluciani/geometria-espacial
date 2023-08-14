@@ -6,9 +6,8 @@ import {
     LineBasicMaterial,
     EdgesGeometry,
     LineSegments,
-    GridHelper,
 } from "@janvorisek/drie";
-import { ref, reactive, computed, toRefs } from "vue"
+import { ref } from "vue"
 import { DoubleSide } from "three";
 
 const props = defineProps({
@@ -45,7 +44,7 @@ const thirty = Math.PI / 6
 const initialSetup = [
     {
         // base
-        vertices: [-1, 0, -Math.sqrt(3) / 3, 1, 0, -Math.sqrt(3) / 3, 0, 0, 2 * Math.sqrt(3) / 3],
+        vertices: [-1, 0, 0, 1, 0, 0, 0, 0, 3 * Math.sqrt(3) / 3],
         faces: [0, 1, 2],
         rotation: [0, 0, 0]
     },
@@ -53,15 +52,15 @@ const initialSetup = [
         // face 1
         vertices: [-1, 0, 0, 1, 0, 0, 1, 2, 0, -1, 2, 0],
         faces: [0, 1, 2, 2, 3, 0],
-        rotation: [-facesRotation.value, 0, 0]
+        rotation: [-0, 0, 0]
     },
     {
         // face 2
         vertices: [
-            -1, 0, -Math.sqrt(3) / 3, // 0
-            0, 0, 2 * Math.sqrt(3) / 3, // 1
-            -1 - 2 * Math.sin(facesRotation.value) * Math.cos(thirty), 2 * Math.cos(facesRotation.value), -Math.sqrt(3) / 3 + 2 * Math.sin(facesRotation.value) * Math.sin(thirty), // 2
-            -2 * Math.sin(facesRotation.value) * Math.cos(thirty), 2 * Math.cos(facesRotation.value), 2 * Math.sqrt(3) / 3 + 2 * Math.sin(facesRotation.value) * Math.sin(thirty), //3
+            -1, 0, 0, // 0
+            0, 0, 3 * Math.sqrt(3) / 3, // 1
+            -1 - 2 * Math.sin(0) * Math.cos(thirty), 2 * Math.cos(0), 2 * Math.sin(0) * Math.sin(thirty), // 2
+            -2 * Math.sin(0) * Math.cos(thirty), 2 * Math.cos(0), 3 * Math.sqrt(3) / 3 + 2 * Math.sin(0) * Math.sin(thirty), //3
         ],
         faces: [0, 1, 3, 3, 2, 0],
         rotation: [0, 0, 0]
@@ -69,17 +68,20 @@ const initialSetup = [
     {
         // face 3
         vertices: [
-            1, 0, -Math.sqrt(3) / 3, // 0
-            0, 0, 2 * Math.sqrt(3) / 3, // 1
-            1 + 2 * Math.sin(facesRotation.value) * Math.cos(thirty), 2 * Math.cos(facesRotation.value), -Math.sqrt(3) / 3 + 2 * Math.sin(facesRotation.value) * Math.sin(thirty), // 2
-            2 * Math.sin(facesRotation.value) * Math.cos(thirty), 2 * Math.cos(facesRotation.value), 2 * Math.sqrt(3) / 3 + 2 * Math.sin(facesRotation.value) * Math.sin(thirty), // 3
+            1, 0, 0, // 0
+            0, 0, 3 * Math.sqrt(3) / 3, // 1
+            1 + 2 * Math.sin(0) * Math.cos(thirty), 2 * Math.cos(0), 2 * Math.sin(0) * Math.sin(thirty), // 2
+            2 * Math.sin(0) * Math.cos(thirty), 2 * Math.cos(0), 3 * Math.sqrt(3) / 3 + 2 * Math.sin(0) * Math.sin(thirty), // 3
         ],
         faces: [0, 1, 3, 3, 2, 0],
         rotation: [0, 0, 0]
     },
     {
         // top
-        vertices: [-1, 2, -Math.sqrt(3) / 3, 1, 2, -Math.sqrt(3) / 3, 0, 2, 2 * Math.sqrt(3) / 3],
+        vertices: [
+            -1, 2, 0, // 0
+            1, 2, 0, // 1
+            0, 2 + 3 * Math.sqrt(3) / 3 * Math.sin(0), 3 * Math.sqrt(3) / 3 * Math.cos(0)],
         faces: [0, 1, 2],
         rotation: [0, 0, 0]
     },
