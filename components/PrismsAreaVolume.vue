@@ -81,10 +81,7 @@ const volume = (): number => {
 
 const rotation = (): number[] => {
     if (baseEdgesNum.value % 2 === 0) {
-        console.log("GIRAR")
         return [0, Math.PI / 4, 0]
-    } else {
-        console.log("NAO GIRAR")
     }
     return [0, 0, 0]
 }

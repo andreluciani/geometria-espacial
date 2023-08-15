@@ -137,14 +137,7 @@ Em que:
 
 # Prisma - Projeções
 
-<!-- Adicionar projeções de prismas -->
-<ProjectionsInteractive />
-
----
-
-# Quiz
-
-<Quiz questionsNumber=2 />
+<ProjectionsPrismInteractive />
 
 ---
 layout: two-cols
@@ -162,7 +155,7 @@ layout: two-cols
 
 ::right::
 
-<TruncatedPrism />
+<TruncatedPrism :position="[0,0,0]" />
 
 ---
 
