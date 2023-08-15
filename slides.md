@@ -96,13 +96,25 @@ layout: two-cols
 
 ---
 
-# Prisma - Planificação e Áreas
+# Prismas - Áreas
+
+<v-clicks>
+
+- Área das Bases
+
+- Área Lateral
+
+- Área Total
+
+</v-clicks>
+
+---
+
+## Prisma - Planificação e Áreas
 
 <PrismNet />
 
 
----
-layout: center
 ---
 
 # Prismas - Volume
@@ -135,12 +147,22 @@ Em que:
 <Quiz questionsNumber=2 />
 
 ---
+layout: two-cols
+---
 
 # Extra - Tronco de Prisma
 
-<!-- Adicionar exemplo de tronco de prisma -->
-<ProjectionsInteractive />
-<!-- Cálculo de área ok, volume média aritimética das arestas -->
+<v-clicks>
+
+- Área
+
+- Volume
+  - Média aritimética das alturas
+</v-clicks>
+
+::right::
+
+<TruncatedPrism />
 
 ---
 
