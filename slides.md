@@ -166,10 +166,9 @@ layout: two-cols
 
 ---
 
-## Prisma - Área e Volume
+# Prisma - Área e Volume
 
-<!-- Adicionar área e volume interativos -->
-<ProjectionsInteractive />
+<PrismsAreaVolume />
 
 ---
 layout: center
