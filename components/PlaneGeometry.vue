@@ -14,7 +14,7 @@ import {
     Group,
     Line,
     Points,
-    PointsMaterial
+    PointsMaterial,
 } from "@janvorisek/drie";
 import { ref, Ref, reactive, onMounted } from 'vue'
 import {
