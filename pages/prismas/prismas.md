@@ -12,13 +12,12 @@ info: |
   Conceitos, exemplos e exercícios.
 
   - [Código Fonte da Apresentação](https://github.com/andreluciani/geometria-espacial)
-  - [Slides - Aula 22/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-22.pdf)
   - [Slides - Aula 15/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-15.pdf)
   - [Slides - Aula 08/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-08.pdf)
   - [Slides - Aula 01/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: /geometria-espacial/assets/geometria-espacial-2023-08-22.pdf
+download: /geometria-espacial/assets/geometria-espacial-2023-08-15.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
@@ -44,7 +43,7 @@ Prof. André
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <octicon-link-16 />
   </a>
-  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-22.pdf" target="_blank" alt="PDF"
+  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-15.pdf" target="_blank" alt="PDF"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <fa6-solid:file-pdf />
   </a>
@@ -59,14 +58,13 @@ hideInToc: true
 
 - [Introdução - Parte 1](/geometria-espacial/introducao-pt1) - 01/08/2023
 - [Introdução - Parte 2](/geometria-espacial/introducao-pt2) - 08/08/2023
-- [Prismas](/geometria-espacial/prismas) - 15/08/2023
 
 ---
 layout: default
 hideInToc: true
 ---
 
-# Pirâmides
+# Prismas
 
 <Toc maxDepth="1"></Toc>
 
@@ -74,7 +72,7 @@ hideInToc: true
 layout: two-cols
 ---
 
-# Pirâmides - Definição
+# Prismas - Definição
 
 <v-clicks>
 
@@ -88,21 +86,21 @@ layout: two-cols
 
 ::right::
 
-<!-- <Prisms /> -->
+<Prisms />
 
 ---
 
-# Pirâmides - Nomenclatura
+# Prismas - Nomenclatura
 
-<!-- <PrismsCategories /> -->
+<PrismsCategories />
 
 ---
 
-# Pirâmides - Áreas
+# Prismas - Áreas
 
 <v-clicks>
 
-- Área da Base
+- Área das Bases
 
 - Área Lateral
 
@@ -112,32 +110,32 @@ layout: two-cols
 
 ---
 
-## Pirâmide - Planificação e Áreas
+## Prisma - Planificação e Áreas
 
 <PrismNet />
 
 
 ---
 
-# Pirâmides - Volume
+# Prismas - Volume
 
-Para calcular o volume de pirâmides, utilizamos a fórmula:
+Para calcular o volume de primas, utilizamos a fórmula:
 
 $$
 \begin{array}{c}
-V = \frac{A_{b}h}{3}
+V = A_{b}h
 \end{array}
 $$
 
 Em que:
 
-- $V$ é o volume do pirâmide
-- $A_{b}$ é a área da base da pirâmide
-- $h$ é a altura da pirâmide
+- $V$ é o volume do prisma
+- $A_{b}$ é a área da base do prisma
+- $h$ é a altura do prisma
 
 ---
 
-# Pirâmide - Projeções
+# Prisma - Projeções
 
 <ProjectionsPrismInteractive />
 
@@ -145,7 +143,7 @@ Em que:
 layout: two-cols
 ---
 
-# Extra - Tronco de Pirâmide
+# Extra - Tronco de Prisma
 
 <v-clicks>
 
@@ -161,7 +159,7 @@ layout: two-cols
 
 ---
 
-# Pirâmide - Área e Volume
+# Prisma - Área e Volume
 
 <PrismsAreaVolume />
 
