@@ -120,13 +120,13 @@ layout: two-cols
 ---
 
 <style>
-  .katex { font-size: 2.0em; }
+  .katex { font-size: 2em !important; }
 </style>
 
 
-## Pirâmides - Volume
+# Pirâmides - Volume
 
-Para calcular o volume de pirâmides, utilizamos a fórmula:
+- Para calcular o volume de pirâmides, utilizamos a fórmula:
 
 $$
 \begin{array}{c}
@@ -141,34 +141,24 @@ Em que:
 - $h$ é a altura da pirâmide
 
 ---
-
-# Pirâmide - Projeções
-
-<ProjectionsPrismInteractive />
-
----
 layout: two-cols
 ---
 
-# Extra - Tronco de Pirâmide
+# Extra
+
+## Tronco de Pirâmide
 
 <v-clicks>
 
 - Área
 
 - Volume
-  - Média aritimética das alturas
+
 </v-clicks>
 
 ::right::
 
-<TruncatedPrism :position="[0,0,0]" />
-
----
-
-# Pirâmide - Área e Volume
-
-<PrismsAreaVolume />
+<PyramidFrustum />
 
 ---
 layout: center
