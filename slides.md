@@ -88,13 +88,13 @@ layout: two-cols
 
 ::right::
 
-<!-- <Prisms /> -->
+<Pyramids />
 
 ---
 
 # Pirâmides - Nomenclatura
 
-<!-- <PrismsCategories /> -->
+<PyramidsCategories />
 
 ---
 
@@ -114,12 +114,17 @@ layout: two-cols
 
 ## Pirâmide - Planificação e Áreas
 
-<PrismNet />
+<PyramidNet />
 
 
 ---
 
-# Pirâmides - Volume
+<style>
+  .katex { font-size: 2.0em; }
+</style>
+
+
+## Pirâmides - Volume
 
 Para calcular o volume de pirâmides, utilizamos a fórmula:
 
