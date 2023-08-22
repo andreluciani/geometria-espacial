@@ -164,6 +164,60 @@ layout: two-cols
 <PrismsAreaVolume />
 
 ---
+
+# Questões ENEM
+
+## ENEM 2020
+
+A caixa-d'água de um edifício terá a forma de um paralelepípedo retângulo reto com volume igual a 28080 litros. Em uma maquete que representa o edifício, a caixa-d'água tem dimensões 2cm x 3,51cm x 4cm. Dado: 1 dm³ = 1 L.
+
+A escala usada pelo arquiteto foi?
+
+**a)** 1:10
+
+**b)** 1:100
+
+**c)** 1:1 000
+
+**d)** 1:10 000
+
+**e)** 1:100 000
+
+---
+
+## ENEM 2020 (continuação)
+
+
+---
+layout: two-cols
+---
+
+## ENEM 2022
+
+Um robô, que tem um ímã em sua base, se desloca sobre a superfície externa de um cubo metálico, ao longo de segmentos de reta cujas extremidades são pontos médios de arestas e centros de faces. Ele inicia seu deslocamento no ponto P, centro da face superior do cubo, segue para o centro da próxima face, converte à esquerda e segue para o centro da face seguinte, converte à direita e continua sua movimentação, sempre alternando entre conversões à esquerda e à direita quando alcança o centro de uma face. O robô só termina sua movimentação quando retorna ao ponto P. A figura apresenta os deslocamentos iniciais desse robô.
+
+::right::
+
+<img class="m-auto" src="/assets/2022-178.png" width="300">
+
+A projeção ortogonal do trajeto descrito por esse robô
+sobre o plano da base, após terminada sua movimentação,
+visualizada da posição em que se está enxergando esse
+cubo, é?
+
+---
+layout: two-cols
+---
+
+## ENEM 2022 (continuação)
+
+Esboçar as projeções!
+
+<img class="m-auto" src="/assets/2022-178.png" width="300">
+
+::right::
+
+---
 layout: center
 ---
 
