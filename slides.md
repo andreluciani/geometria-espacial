@@ -207,6 +207,51 @@ layout: two-cols
 <PyramidFrustum />
 
 ---
+
+## Tronco de Pirâmide - Deduções
+
+### Área e Volume
+
+- Semelhança de Triângulos
+
+    - $\frac{h}{H}=k$
+    - $\frac{a}{A}=k^{2}$
+    - $\frac{v}{V}=k^{3}$
+
+- Volume em função das áreas das bases:
+
+    $V=\frac{h}{3} \left ( a + A + \sqrt{aA} \right )$
+
+---
+
+## Tronco de Pirâmide - Deduções
+
+### Planificação
+
+---
+
+## Tronco de Pirâmide - Exercício
+
+### ENEM 2009
+
+Uma fábrica produz velas de parafina em forma de pirâmide quadrangular regular com 19 cm de altura e 6 cm de aresta da base.
+Essas velas são formadas por 4 blocos de mesma altura — 3 troncos de pirâmide de bases paralelas e 1 pirâmide na parte superior —,
+espaçados de 1 cm entre eles, sendo que a base superior de cada bloco é igual à base inferior do bloco sobreposto,
+com uma haste de ferro passando pelo centro de cada bloco, unindo-os, conforme a figura.
+
+<img class="m-auto" src="/assets/vela-enem.png" width="150">
+
+Se o dono da fábrica resolver diversificar o modelo, retirando a pirâmide da parte superior, que tem 1,5 cm de aresta na base,
+mas mantendo o mesmo molde, quanto ele passará a gastar com parafina para fabricar uma vela? **R: 189cm³**
+
+---
+
+## Tronco de Pirâmide - Exercício
+
+### ENEM 2009 - Resolução
+
+
+---
 layout: center
 ---
 
