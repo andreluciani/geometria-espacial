@@ -120,7 +120,7 @@ layout: two-cols
 ---
 
 <style>
-  .katex { font-size: 2em !important; }
+  .katex { font-size: 2em; }
 </style>
 
 
@@ -139,6 +139,52 @@ Em que:
 - $V$ é o volume do pirâmide
 - $A_{b}$ é a área da base da pirâmide
 - $h$ é a altura da pirâmide
+
+---
+
+<style>
+  .katex { font-size: 1em; }
+</style>
+
+# Pirâmides - Exercício
+
+- Uma das 7 maravilhas do mundo é a Grande Pirâmide de Gizé. Ela se chama Quéops, e fica próxima à outras duas grandes pirâmides, Quéfren e Miquerinos.
+
+- A altura da pirâmide Quéops é aproximadamente **140 metros** e a lateral da sua base é cerca de **230 metros**.
+
+<img class="m-auto" src="/assets/queops.jpg" width="600">
+
+---
+
+## Pirâmides - Exercício
+
+- Assumindo que a pirâmide Quéops é uma pirâmide quadrangular regular de altura igual a **100m** e lateral da base **200m** determine:
+
+- A área lateral da pirâmide
+
+- O volume da pirâmide
+
+- Estimar a massa da pirâmide.
+
+- Dados:
+  - $\sqrt{2} \approx 1,41$
+  - Densidade do granito: $3 \text{ton} / m^{3}$
+
+---
+
+## Pirâmides - Exercício
+
+- Assumindo que a pirâmide Quéops é uma pirâmide quadrangular regular de altura igual a **100m** e lateral da base **200m** determine:
+
+- A área lateral da pirâmide
+
+- O volume da pirâmide
+
+- Estimar a massa da pirâmide.
+
+- Dados:
+  - $\sqrt{2} \approx 1,41$
+  - Densidade do granito: $3 \text{ton} / m^{3}$
 
 ---
 layout: two-cols
