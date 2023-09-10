@@ -12,15 +12,13 @@ info: |
   Conceitos, exemplos e exercícios.
 
   - [Código Fonte da Apresentação](https://github.com/andreluciani/geometria-espacial)
-  - [Slides - Aula 05/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-05.pdf)
   - [Slides - Aula 29/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-29.pdf)
-  - [Slides - Aula 22/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-22.pdf)
   - [Slides - Aula 15/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-15.pdf)
   - [Slides - Aula 08/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-08.pdf)
   - [Slides - Aula 01/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: /geometria-espacial/assets/geometria-espacial-2023-08-22.pdf
+download: /geometria-espacial/assets/geometria-espacial-2023-08-29.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
@@ -46,7 +44,7 @@ Prof. André
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <octicon-link-16 />
   </a>
-  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-22.pdf" target="_blank" alt="PDF"
+  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-29.pdf" target="_blank" alt="PDF"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <fa6-solid:file-pdf />
   </a>
@@ -61,7 +59,9 @@ hideInToc: true
 
 - [Introdução - Parte 1](/geometria-espacial/introducao-pt1) - 01/08/2023
 - [Introdução - Parte 2](/geometria-espacial/introducao-pt2) - 08/08/2023
-- [Prismas](/geometria-espacial/prismas) - 15/08/2023
+- [Prismas](/geometria-espacial/prismas) - 15/08/2023 e 22/08/2023
+- [Pirâmides - Parte 1](/geometria-espacial/piramides-pt1) - 29/08/2023
+- [Pirâmides - Parte 2](/geometria-espacial/piramides-pt2) - 05/09/2023
 
 ---
 layout: default
@@ -154,7 +154,7 @@ Em que:
 
 - A altura da pirâmide Quéops é aproximadamente **140 metros** e a lateral da sua base é cerca de **230 metros**.
 
-<img class="m-auto" src="/assets/queops.jpg" width="600">
+<img class="m-auto" src="/assets/queops.jpg" width="600" />
 
 ---
 
