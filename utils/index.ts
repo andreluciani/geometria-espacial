@@ -82,20 +82,39 @@ export function generatePrism(
       baseVertices = [
         -edgeSize / 2,
         0,
-        -(edgeSize / 2) * Math.sqrt(3) / 3, //
+        (-(edgeSize / 2) * Math.sqrt(3)) / 3, //
         edgeSize / 2,
         0,
-        -(edgeSize / 2) * Math.sqrt(3) / 3, //
+        (-(edgeSize / 2) * Math.sqrt(3)) / 3, //
         0,
         0,
-        edgeSize * Math.sqrt(3) / 3, //
+        (edgeSize * Math.sqrt(3)) / 3, //
       ];
       faces.push(
-        0, 1, 2, // base
-        0, 1, 4, 0, 4, 3, // front
-        1, 2, 5, 1, 5, 4, // right
-        2, 0, 3, 2, 3, 5, // left
-        3, 4, 5 // top
+        0,
+        1,
+        2, // base
+        0,
+        1,
+        4,
+        0,
+        4,
+        3, // front
+        1,
+        2,
+        5,
+        1,
+        5,
+        4, // right
+        2,
+        0,
+        3,
+        2,
+        3,
+        5, // left
+        3,
+        4,
+        5 // top
       );
   }
   // the top vertices have the same coordinates but different height
@@ -108,5 +127,102 @@ export function generatePrism(
     topVertices[i] += height * Math.tan(inclination);
   }
   vertices.push(...baseVertices, ...topVertices);
+  return { vertices, faces };
+}
+
+export function generatePyramid(
+  n: number,
+  edgeSize: number,
+  height: number,
+  inclination: number = 0
+): { vertices: number[]; faces: number[] } {
+  if (n < 3 || n > 4) {
+    throw new Error(
+      "The pyramid must have at least 3 sides and at max 4 sides"
+    );
+  }
+  if (edgeSize < 0 || edgeSize > 50) {
+    throw new Error("The pyramid edge size must be between 0 and 50");
+  }
+  if (height < 0 || height > 50) {
+    throw new Error("The pyramid height must be between 0 and 50");
+  }
+  if (inclination <= -Math.PI / 2 || inclination >= Math.PI / 2) {
+    throw new Error("The pyramid inclination must be between -90° and 90°");
+  }
+  let baseVertices: number[] = [];
+  let topVertice: number[] = [0, height, 0];
+  const vertices: number[] = [];
+  const faces: number[] = [];
+  switch (n) {
+    case 4:
+      // generate base polygon vertices
+      baseVertices = [
+        -edgeSize / 2,
+        0,
+        -edgeSize / 2, //
+        edgeSize / 2,
+        0,
+        -edgeSize / 2, //
+        edgeSize / 2,
+        0,
+        edgeSize / 2, //
+        -edgeSize / 2,
+        0,
+        edgeSize / 2, //
+      ];
+      faces.push(
+        0,
+        1,
+        2,
+        0,
+        2,
+        3, // base
+        0,
+        1,
+        4, // front
+        1,
+        2,
+        4, // right
+        2,
+        3,
+        4, // back
+        3,
+        0,
+        4 // left
+      );
+      break;
+    default:
+      // must be 3
+      // generate base polygon vertices
+      baseVertices = [
+        -edgeSize / 2,
+        0,
+        (-(edgeSize / 2) * Math.sqrt(3)) / 3, //
+        edgeSize / 2,
+        0,
+        (-(edgeSize / 2) * Math.sqrt(3)) / 3, //
+        0,
+        0,
+        (edgeSize * Math.sqrt(3)) / 3, //
+      ];
+      faces.push(
+        0,
+        1,
+        2, // base
+        0,
+        1,
+        3, // front
+        1,
+        2,
+        3, // right
+        2,
+        0,
+        3 // left
+      );
+  }
+  // if there's an inclination, the top coordinates should be translated accordingly
+  topVertice[2] += height * Math.tan(inclination);
+  vertices.push(...baseVertices, ...topVertice);
   return { vertices, faces };
 }
