@@ -18,21 +18,21 @@ Slides utilizados para aulas de Geometria Espacial
 
 ### Prismas
 
-- [ ] Definição
-- [ ] Nomenclatura
-- [ ] Planificação e Áreas
-- [ ] Volume
-- [ ] Projeções
-- [ ] Tronco de Prisma
+- [x] Definição
+- [x] Nomenclatura
+- [x] Planificação e Áreas
+- [x] Volume
+- [x] Projeções
+- [x] Tronco de Prisma
 
 ### Pirâmides
 
-- [ ] Definição
-- [ ] Nomenclatura
-- [ ] Planificação e Áreas
-- [ ] Volume
-- [ ] Projeções
-- [ ] Tronco de Pirâmide
+- [x] Definição
+- [x] Nomenclatura
+- [x] Planificação e Áreas
+- [x] Volume
+- [x] Projeções
+- [x] Tronco de Pirâmide
 
 ### Cilindro
 
