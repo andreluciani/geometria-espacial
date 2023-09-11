@@ -169,6 +169,10 @@ círculo de 5m de diâmetro. Além disso, o avião possui 20m de comprimento na 
 - Compare a área transversal, área lateral e volume dos dois formatos.
 
 ---
+
+# Cilindros - Projeções
+
+---
 layout: two-cols
 ---
 
