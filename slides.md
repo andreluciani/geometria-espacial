@@ -12,13 +12,14 @@ info: |
   Conceitos, exemplos e exercícios.
 
   - [Código Fonte da Apresentação](https://github.com/andreluciani/geometria-espacial)
+  - [Slides - Aula 12/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-12.pdf)
   - [Slides - Aula 29/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-29.pdf)
   - [Slides - Aula 15/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-15.pdf)
   - [Slides - Aula 08/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-08.pdf)
   - [Slides - Aula 01/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: /geometria-espacial/assets/geometria-espacial-2023-08-29.pdf
+download: /geometria-espacial/assets/geometria-espacial-2023-09-12.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
@@ -44,7 +45,7 @@ Prof. André
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <octicon-link-16 />
   </a>
-  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-29.pdf" target="_blank" alt="PDF"
+  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-12.pdf" target="_blank" alt="PDF"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <fa6-solid:file-pdf />
   </a>
@@ -68,7 +69,7 @@ layout: default
 hideInToc: true
 ---
 
-# Pirâmides
+# Cilindros
 
 <Toc maxDepth="1"></Toc>
 
@@ -76,7 +77,7 @@ hideInToc: true
 layout: two-cols
 ---
 
-# Pirâmides - Definição
+# Cilindros - Definição
 
 <v-clicks>
 
@@ -90,17 +91,15 @@ layout: two-cols
 
 ::right::
 
-<Pyramids />
+<Cylinders />
 
 ---
 
-# Pirâmides - Nomenclatura
-
-<PyramidsCategories />
+# Cilindros - Nomenclatura
 
 ---
 
-# Pirâmides - Áreas
+# Cilindros - Áreas
 
 <v-clicks>
 
@@ -114,9 +113,14 @@ layout: two-cols
 
 ---
 
-## Pirâmide - Planificação e Áreas
+## Cilindros - Planificação e Áreas
 
-<PyramidNet />
+<img class="m-auto" src="/assets/cylinder-unwrap.gif" width="600" />
+
+
+---
+
+## Cilindros - Planificação e Áreas
 
 
 ---
@@ -126,21 +130,21 @@ layout: two-cols
 </style>
 
 
-# Pirâmides - Volume
+# Cilindros - Volume
 
 - Para calcular o volume de pirâmides, utilizamos a fórmula:
 
 $$
 \begin{array}{c}
-V = \frac{A_{b}h}{3}
+V = A_{b}h
 \end{array}
 $$
 
 Em que:
 
-- $V$ é o volume do pirâmide
-- $A_{b}$ é a área da base da pirâmide
-- $h$ é a altura da pirâmide
+- $V$ é o volume do cilindro
+- $A_{b}$ é a área da base do clindro: $A_{b} = \pi r^{2}$
+- $h$ é a altura do cilindro
 
 ---
 
@@ -148,45 +152,21 @@ Em que:
   .katex { font-size: 1em; }
 </style>
 
-# Pirâmides - Exercício
+# Cilindros - Exercício
 
-- Uma das 7 maravilhas do mundo é a Grande Pirâmide de Gizé. Ela se chama Quéops, e fica próxima à outras duas grandes pirâmides, Quéfren e Miquerinos.
+- A fuselagem de aviões podem ter diferentes formatos. Considere que um avião possui duas opções de formato de fuselagem: um quadrado de 4,4m e um
+círculo de 5m de diâmetro. Além disso, o avião possui 20m de comprimento na seção "constante" da fuselagem.
 
-- A altura da pirâmide Quéops é aproximadamente **140 metros** e a lateral da sua base é cerca de **230 metros**.
-
-<img class="m-auto" src="/assets/queops.jpg" width="600" />
-
----
-
-## Pirâmides - Exercício
-
-- Assumindo que a pirâmide Quéops é uma pirâmide quadrangular regular de altura igual a **100m** e lateral da base **200m** determine:
-
-- A área lateral da pirâmide
-
-- O volume da pirâmide
-
-- Estimar a massa da pirâmide.
-
-- Dados:
-  - $\sqrt{2} \approx 1,41$
-  - Densidade do granito: $3 \text{ton} / m^{3}$
+- Compare a área transversal, área lateral e volume dos dois formatos.
 
 ---
 
-## Pirâmides - Exercício
+## Cilindros - Exercício (continuação)
 
-- Assumindo que a pirâmide Quéops é uma pirâmide quadrangular regular de altura igual a **100m** e lateral da base **200m** determine:
+- A fuselagem de aviões podem ter diferentes formatos. Considere que um avião possui duas opções de formato de fuselagem: um quadrado de 4,4m e um
+círculo de 5m de diâmetro. Além disso, o avião possui 20m de comprimento na seção "constante" da fuselagem.
 
-- A área lateral da pirâmide
-
-- O volume da pirâmide
-
-- Estimar a massa da pirâmide.
-
-- Dados:
-  - $\sqrt{2} \approx 1,41$
-  - Densidade do granito: $3 \text{ton} / m^{3}$
+- Compare a área transversal, área lateral e volume dos dois formatos.
 
 ---
 layout: two-cols
@@ -194,118 +174,7 @@ layout: two-cols
 
 # Extra
 
-## Tronco de Pirâmide
-
-<v-clicks>
-
-- Área
-
-- Volume
-
-</v-clicks>
-
-::right::
-
-<PyramidFrustum />
-
----
-
-## Tronco de Pirâmide - Deduções
-
-### Área e Volume
-
-- Semelhança de Triângulos
-
-    - $\frac{h}{H}=k$
-    - $\frac{a}{A}=k^{2}$
-    - $\frac{v}{V}=k^{3}$
-
-- Volume em função das áreas das bases:
-
-    $V=\frac{h}{3} \left ( a + A + \sqrt{aA} \right )$
-
----
-
-## Tronco de Pirâmide - Deduções
-
-### Planificação
-
----
-
-## Tronco de Pirâmide - Exercício
-
-### ENEM 2009
-
-Uma fábrica produz velas de parafina em forma de pirâmide quadrangular regular com 19 cm de altura e 6 cm de aresta da base.
-Essas velas são formadas por 4 blocos de mesma altura — 3 troncos de pirâmide de bases paralelas e 1 pirâmide na parte superior —,
-espaçados de 1 cm entre eles, sendo que a base superior de cada bloco é igual à base inferior do bloco sobreposto,
-com uma haste de ferro passando pelo centro de cada bloco, unindo-os, conforme a figura.
-
-<img class="m-auto" src="/assets/vela-enem.png" width="150">
-
-Se o dono da fábrica resolver diversificar o modelo, retirando a pirâmide da parte superior, que tem 1,5 cm de aresta na base,
-mas mantendo o mesmo molde, quanto ele passará a gastar com parafina para fabricar uma vela? **R: 189cm³**
-
----
-
-## Tronco de Pirâmide - Exercício
-
-### ENEM 2009 - Resolução
-
-
----
-
-# Questões ENEM
-
-## ENEM 2020
-
-A caixa-d'água de um edifício terá a forma de um paralelepípedo retângulo reto com volume igual a 28080 litros. Em uma maquete que representa o edifício, a caixa-d'água tem dimensões 2cm x 3,51cm x 4cm. Dado: 1 dm³ = 1 L.
-
-A escala usada pelo arquiteto foi?
-
-**a)** 1:10
-
-**b)** 1:100
-
-**c)** 1:1 000
-
-**d)** 1:10 000
-
-**e)** 1:100 000
-
----
-
-## ENEM 2020 (continuação)
-
-
----
-layout: two-cols
----
-
-## ENEM 2022
-
-Um robô, que tem um ímã em sua base, se desloca sobre a superfície externa de um cubo metálico, ao longo de segmentos de reta cujas extremidades são pontos médios de arestas e centros de faces. Ele inicia seu deslocamento no ponto P, centro da face superior do cubo, segue para o centro da próxima face, converte à esquerda e segue para o centro da face seguinte, converte à direita e continua sua movimentação, sempre alternando entre conversões à esquerda e à direita quando alcança o centro de uma face. O robô só termina sua movimentação quando retorna ao ponto P. A figura apresenta os deslocamentos iniciais desse robô.
-
-::right::
-
-<img class="m-auto" src="/assets/2022-178.png" width="300">
-
-A projeção ortogonal do trajeto descrito por esse robô
-sobre o plano da base, após terminada sua movimentação,
-visualizada da posição em que se está enxergando esse
-cubo, é?
-
----
-layout: two-cols
----
-
-## ENEM 2022 (continuação)
-
-Esboçar as projeções!
-
-<img class="m-auto" src="/assets/2022-178.png" width="300">
-
-::right::
+## Tronco de Cilindro
 
 ---
 layout: center
