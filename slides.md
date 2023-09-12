@@ -85,7 +85,7 @@ layout: two-cols
 
 - Altura
 
-- Face lateral
+- ~~Face~~ Superfície lateral
 
 </v-clicks>
 

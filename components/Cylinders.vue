@@ -46,7 +46,7 @@ onMounted(() => {
                         <Mesh :position="[0, 3.01, 6]" :rotation="rot">
                             <MeshBasicMaterial color="#118ab2" :transparent="true" :opacity="0.8" />
                             <CylinderGeometry name="cylinder" :radius-top="3" :radius-bottom="3" :height="6"
-                                :radial-segments="20" />
+                                :radial-segments="40" />
                         </Mesh>
                         <LineSegments :position="[0, 3.01, 6]" :rotation="rot">
                             <LineBasicMaterial color="black" />
