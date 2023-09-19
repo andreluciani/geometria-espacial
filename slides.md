@@ -105,9 +105,27 @@ layout: two-cols
 
 - Área da Base
 
+  $$
+  \begin{array}{c}
+  A_{b} = \pi r^{2}
+  \end{array}
+  $$
+
 - Área Lateral
 
+  $$
+  \begin{array}{c}
+  A_{l} = 2 \pi rh
+  \end{array}
+  $$
+
 - Área Total
+
+  $$
+  \begin{array}{c}
+  A_{t} = 2 A_{b} + A_{l}
+  \end{array}
+  $$
 
 </v-clicks>
 
