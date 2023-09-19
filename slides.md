@@ -107,11 +107,11 @@ layout: two-cols
 
 - Área da Base
 
-  - $A_{b} = \pi r^{2}$
+  - $A_{b} = \pi R^{2}$
 
 - Área Lateral
 
-  - $A_{l} = \frac{\alpha}{2 \pi}\pi g^{2}$
+  - $A_{l} = \pi R g$
 
 - Área Total
 
