@@ -36,12 +36,21 @@ Slides utilizados para aulas de Geometria Espacial
 
 ### Cilindro
 
+- [x] Definição
+- [x] Nomenclatura
+- [x] Planificação e Áreas
+- [x] Volume
+- [x] Projeções
+- [x] Tronco de Cilindro
+
+### Cone
+
 - [ ] Definição
 - [ ] Nomenclatura
 - [ ] Planificação e Áreas
 - [ ] Volume
 - [ ] Projeções
-- [ ] Tronco de Cilindro
+- [ ] Tronco de Cone
 
 ### Esfera
 
