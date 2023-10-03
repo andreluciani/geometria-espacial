@@ -12,6 +12,7 @@ info: |
   Conceitos, exemplos e exercícios.
 
   - [Código Fonte da Apresentação](https://github.com/andreluciani/geometria-espacial)
+  - [Slides - Aula 26/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-26.pdf)
   - [Slides - Aula 19/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-19.pdf)
   - [Slides - Aula 12/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-12.pdf)
   - [Slides - Aula 29/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-29.pdf)
@@ -20,14 +21,14 @@ info: |
   - [Slides - Aula 01/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: /geometria-espacial/assets/geometria-espacial-2023-09-19.pdf
+download: /geometria-espacial/assets/geometria-espacial-2023-10-03.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
 title: Geometria Espacial
 titleTemplate: '%s'
 hideInToc: true
-canvasWidth: 800
+canvasWidth: 1200
 ---
 
 <DrauuConfig/>
@@ -46,7 +47,7 @@ Prof. André
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <octicon-link-16 />
   </a>
-  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-19.pdf" target="_blank" alt="PDF"
+  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-10-03.pdf" target="_blank" alt="PDF"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <fa6-solid:file-pdf />
   </a>
@@ -65,13 +66,14 @@ hideInToc: true
 - [Pirâmides - Parte 1](/geometria-espacial/piramides-pt1) - 29/08/2023
 - [Pirâmides - Parte 2](/geometria-espacial/piramides-pt2) - 05/09/2023
 - [Cilindros](/geometria-espacial/cilindros) - 12/09/2023
+- [Cones](/geometria-espacial/cones) - 19/09/2023 e 26/09/2023
 
 ---
 layout: default
 hideInToc: true
 ---
 
-# Cones
+# Esfera
 
 <Toc maxDepth="1"></Toc>
 
@@ -79,57 +81,68 @@ hideInToc: true
 layout: two-cols
 ---
 
-# Cones - Definição
+# Esferas - Definição
 
 <v-clicks>
 
-- Base
+- Raio
 
-- Altura
+- Eixo
 
-- Superfície lateral
+- Superfície
 
 </v-clicks>
 
 ::right::
 
-<Cones /> 
+<Spheres /> 
 
 ---
-
-# Cones - Nomenclatura
-
+layout: two-cols
 ---
 
-# Cones - Áreas
+# Esferas - Nomenclatura
 
 <v-clicks>
 
-- Área da Base
+- Sólido de Revolução
 
-  - $A_{b} = \pi R^{2}$
+- Equador/paralelos
 
-- Área Lateral
+- Meridianos
 
-  - $A_{l} = \pi R g$
+- Fuso
 
-- Área Total
-
-  - $A_{t} = A_{b} + A_{l}$
+- Cunha
 
 </v-clicks>
 
----
+::right::
 
-## Cones - Planificação e Áreas
-
-<img class="m-auto" src="/assets/cone-unwrap.gif" width="600" />
-
+<Spheres /> 
 
 ---
+layout: two-cols
+---
 
-## Cones - Planificação e Áreas
+# Esfera - Área
 
+<v-clicks>
+
+- Área
+
+  - $A_{esfera} = 4\pi R^2$
+
+</v-clicks>
+
+
+::right::
+
+<Spheres /> 
+
+---
+
+## Esfera - Planificação
 
 ---
 
@@ -138,101 +151,48 @@ layout: two-cols
 </style>
 
 
-# Cones - Volume
+# Esfera - Volume
 
-- Para calcular o volume de cones, utilizamos a fórmula:
+- Para calcular o volume de esferas, utilizamos a fórmula:
 
 $$
 \begin{array}{c}
-V = \frac{A_{b}h}{3}
+V = \frac{4 \pi R^3}{3}
 \end{array}
 $$
 
 Em que:
 
-- $V$ é o volume do cone
-- $A_{b}$ é a área da base do cone: $A_{b} = \pi r^{2}$
-- $h$ é a altura do cone
+- $V$ é o volume da esfera
+- $R$ é a raio da esfera
 
 ---
 
-# Cones - Exercício
-## ENEM 2022
+# Esfera - Exercícios
 
-Uma empresa produz e vende um tipo de chocolate, maciço, em formato de cone circular reto com as medidas do diâmetro da base e da altura iguais a 8 cm e 10 cm, respectivamente, como apresenta a figura.
+## Área
 
-<img class="m-auto" src="/assets/cone-enem.png" width="300" />
+- Compare a área de uma esfera de raio $R$ inscrita em um cilindro de altura $a = 2R$
 
-Devido a um aumento de preço dos ingredientes utilizados na produção desse chocolate, a empresa decide produzir esse mesmo tipo de chocolate com um volume 19% menor, no mesmo formato de cone circular reto com altura de 10 cm. Para isso, a empresa produzirá esses novos chocolates com medida do raio da base, em centímetro, igual a:
+<br>
 
----
-
-## Cones - Exercício (continuação)
-
-
-... Para isso, a empresa produzirá esses novos chocolates com medida do raio da base, em centímetro, igual a:
-
-A) 1,52.
-
-B) 3,24.
-
-C) 3,60.
-
-D) 6,48.
-
-E) 7,20.
+<img class="m-auto" src="/assets/esfera-inscrita-cilindro.png" width="200" />
 
 ---
 
-# Cones - Projeções
+# Esfera - Exercícios
+
+## Volume
+
+- Compare o volume de uma esfera de raio $R$ inscrita em um cilindro de altura $a = 2R$
+
+<br>
+
+<img class="m-auto" src="/assets/esfera-inscrita-cilindro.png" width="200" />
 
 ---
-layout: two-cols
----
 
-# Extra
-
-## Tronco de Cone - Área
-
-- Para calcular a área de troncos de cones retos, utilizamos a fórmula:
-
-$$
-\begin{array}{c}
-A_{lat} = \pi \left ( R + r \right ) . g_{T} \\
-\\
-A_{bases} = \pi r^{2} + \pi R^{2} = \pi \left ( r^{2} + R^{2} \right )
-\end{array}
-$$
-
----
-layout: two-cols
----
-
-## Tronco de Cone - Planificação
-
----
-layout: two-cols
----
-
-# Extra
-
-## Tronco de Cone - Volume
-
-- Para calcular o volume de troncos de cones retos, utilizamos a fórmula:
-
-$$
-\begin{array}{c}
-V_{tronco} = \frac{\pi h_{T}}{3} \left ( r^{2} + R^{2} + Rr \right )
-\end{array}
-$$
-
-
----
-layout: two-cols
----
-
-## Tronco de Cone - Projeções Ortogonais
-
+# Esfera - Projeções
 
 ---
 layout: center
