@@ -27,7 +27,7 @@ favicon: /favicon.png
 title: Geometria Espacial
 titleTemplate: '%s'
 hideInToc: true
-canvasWidth: 800
+canvasWidth: 1200
 ---
 
 <DrauuConfig/>
