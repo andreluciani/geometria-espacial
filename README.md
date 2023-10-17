@@ -45,20 +45,20 @@ Slides utilizados para aulas de Geometria Espacial
 
 ### Cone
 
-- [ ] Definição
-- [ ] Nomenclatura
-- [ ] Planificação e Áreas
-- [ ] Volume
-- [ ] Projeções
-- [ ] Tronco de Cone
+- [x] Definição
+- [x] Nomenclatura
+- [x] Planificação e Áreas
+- [x] Volume
+- [x] Projeções
+- [x] Tronco de Cone
 
 ### Esfera
 
-- [ ] Definição
-- [ ] Nomenclatura
-- [ ] Planificação e Áreas
-- [ ] Volume
-- [ ] Projeções
+- [x] Definição
+- [x] Nomenclatura
+- [x] Planificação e Áreas
+- [x] Volume
+- [x] Projeções
 
 ## Para iniciar o ambiente de desenvolvimento
 
