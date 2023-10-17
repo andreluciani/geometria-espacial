@@ -12,7 +12,6 @@ info: |
   Conceitos, exemplos e exercícios.
 
   - [Código Fonte da Apresentação](https://github.com/andreluciani/geometria-espacial)
-  - [Slides - Aula 03/10/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-10-03.pdf)
   - [Slides - Aula 26/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-26.pdf)
   - [Slides - Aula 19/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-19.pdf)
   - [Slides - Aula 12/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-12.pdf)
