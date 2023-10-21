@@ -28,7 +28,7 @@ transition: slide-left
 colorSchema: light
 favicon: /favicon.png
 title: Geometria Espacial
-titleTemplate: "%s"
+titleTemplate: '%s'
 hideInToc: true
 canvasWidth: 1200
 ---
@@ -56,10 +56,8 @@ Prof. André
 </div>
 
 ---
-
 layout: default
 hideInToc: true
-
 ---
 
 # Slides das Aulas Passadas
@@ -74,10 +72,8 @@ hideInToc: true
 - [Esferas](/geometria-espacial/esferas) - 03/10/2023
 
 ---
-
 layout: default
 hideInToc: true
-
 ---
 
 # Revisão
@@ -85,8 +81,8 @@ hideInToc: true
 <Toc maxDepth="1"></Toc>
 
 ---
-
-## layout: two-cols
+layout: two-cols
+---
 
 # Revisão
 
@@ -106,7 +102,7 @@ hideInToc: true
 
 ::right::
 
-<Solids />
+<Solids /> 
 
 ---
 
@@ -121,7 +117,6 @@ hideInToc: true
 <!-- Citar teorema de pitágoras, comprimento de arco, área de poligonos, área de circunferência -->
 
 ---
-
 # Fórmulas
 
 ### Prismas
@@ -151,7 +146,6 @@ hideInToc: true
 - Área:
 
 - Volume:
-
 ---
 
 ## Fórmulas
@@ -179,7 +173,8 @@ O número mínimo de bolinhas necessárias para que se
 possa retirar o objeto que flutua na água, seguindo as
 instruções dadas, é de:
 
-_Resposta: 14_
+*Resposta: 14*
+
 
 ---
 
@@ -197,13 +192,15 @@ Uma loja de materiais de construção vende dois tipos de caixas-d’água: tipo
 Ambas têm formato cilíndrico e possuem o mesmo volume, e a altura da caixa-d’água do tipo B é igual a 25% da altura da caixa-d’água do tipo A.
 Se R denota o raio da caixa-d’água do tipo A, então o raio da caixa-d’água do tipo B é?
 
-_Resposta: 2R_
+*Resposta: 2R*
+
 
 ---
 
 ## Exercícios - ENEM
 
 ## 2020 - 168 (Continuação)
+
 
 ---
 
@@ -216,7 +213,7 @@ maciços de formato esférico, com 2 cm de diâmetro. Um cliente encomenda 150 d
 A cozinheira pretende preparar o número exato de porções da receita-base de massa necessário para produzir os docinhos dessa encomenda.
 Quantas porções da receita-base de massa ela deve preparar para atender esse cliente?
 
-_Resposta: 24_
+*Resposta: 24*
 
 ---
 
@@ -224,8 +221,9 @@ _Resposta: 24_
 
 ## 2022 (Continuação)
 
----
 
-## layout: center
+---
+layout: center
+---
 
 ## Obrigado!
