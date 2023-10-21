@@ -14,13 +14,15 @@
     "@slidev/theme-seriph": "latest",
     "cheerio": "^1.0.0-rc.12",
     "three": "^0.155.0",
-    "vue-confetti-explosion": "^1.0.2"
+    "vue-confetti-explosion": "^1.0.2",
+    "postcss": ">=8.4.31"
   },
   "devDependencies": {
     "@iconify-json/ci": "^1.1.9",
     "@iconify-json/fa6-solid": "^1.1.13",
     "@iconify-json/octicon": "^1.1.45",
     "@types/three": "^0.154.0",
-    "playwright-chromium": "^1.36.1"
+    "playwright-chromium": "^1.36.1",
+    "postcss": ">=8.4.31"
   }
 }
