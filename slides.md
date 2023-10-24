@@ -221,6 +221,55 @@ Quantas porções da receita-base de massa ela deve preparar para atender esse c
 
 ## 2022 (Continuação)
 
+---
+
+## Exercícios - ENEM
+
+## 2020 - reaplicação
+
+Um piscicultor cria uma espécie de peixe em um tanque cilíndrico. Devido às características dessa espécie, o tanque deve ter, exatamente,
+2 metros de profundidade e ser dimensionado de forma a comportar 5 peixes para cada metro cúbico de água. Atualmente, o tanque comporta um
+total de 750 peixes. O piscicultor deseja aumentar a capacidade do tanque para que ele comporte 900 peixes, mas sem alterar a sua profundidade.
+Considere 3 como aproximação para $\pi$. O aumento da medida do raio do tanque, em metro, deve ser de:
+
+*Resposta: $\sqrt{30} - 5$*
+
+---
+
+## Exercícios - ENEM
+
+## 2020 - reaplicação (continuação)
+
+---
+
+## Exercícios - ENEM - 2016
+
+Um petroleiro possui reservatório em formato de um
+paralelepípedo retangular com as dimensões dadas por
+60 m x 10 m de base e 10 m de altura. Com o objetivo de
+minimizar o impacto ambiental de um eventual vazamento,
+esse reservatório é subdividido em três compartimentos,
+A, B e C, de mesmo volume, por duas placas de aço
+retangulares com dimensões de 7 m de altura e 10 m de
+base, de modo que os compartimentos são interligados,
+conforme a figura. Assim, caso haja rompimento no casco
+do reservatório, apenas uma parte de sua carga vazará.
+
+<img class="m-auto" src="/assets/reservatorio.png" width="350" />
+
+Suponha que ocorra um desastre quando o petroleiro
+se encontra com sua carga máxima: ele sofre um acidente
+que ocasiona um furo no fundo do compartimento C.
+Para fins de cálculo, considere desprezíveis as
+espessuras das placas divisórias.
+Após o fim do vazamento, o volume de petróleo derramado
+terá sido de:
+
+*Resposta: 3,2 × 10³ m³*
+
+---
+
+## Exercícios - ENEM - 2016 (continuação)
 
 ---
 layout: center
