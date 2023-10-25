@@ -12,7 +12,7 @@ info: |
   Conceitos, exemplos e exercícios.
 
   - [Código Fonte da Apresentação](https://github.com/andreluciani/geometria-espacial)
-  - [Slides - Aula 17/10/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-10-17.pdf)
+  - [Slides - Aula 17/10/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-10-24.pdf)
   - [Slides - Aula 03/10/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-10-03.pdf)
   - [Slides - Aula 26/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-26.pdf)
   - [Slides - Aula 19/09/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-09-19.pdf)
@@ -23,7 +23,7 @@ info: |
   - [Slides - Aula 01/08/2023](https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-08-01.pdf)
 drawings:
   persist: true
-download: /geometria-espacial/assets/geometria-espacial-2023-10-03.pdf
+download: /geometria-espacial/assets/geometria-espacial-2023-10-24.pdf
 transition: slide-left
 colorSchema: light
 favicon: /favicon.png
@@ -49,7 +49,7 @@ Prof. André
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <octicon-link-16 />
   </a>
-  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-10-17.pdf" target="_blank" alt="PDF"
+  <a href="https://andreluciani.github.io/geometria-espacial/assets/geometria-espacial-2023-10-24.pdf" target="_blank" alt="PDF"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <fa6-solid:file-pdf />
   </a>
