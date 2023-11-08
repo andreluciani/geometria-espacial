@@ -98,6 +98,8 @@ layout: two-cols
 
 - Esferas
 
+- ENEM - Dicas
+
 </v-clicks>
 
 ::right::
@@ -272,7 +274,121 @@ terá sido de:
 ## Exercícios - ENEM - 2016 (continuação)
 
 ---
+
+## Exercícios - ENEM - 2022
+
+Na figura estão destacadas duas trajetórias sobre a
+superfície do globo terrestre, descritas ao se percorrer
+parte dos meridianos 1, 2 e da Linha do Equador, sendo
+que os meridianos 1 e 2 estão contidos em planos
+perpendiculares entre si. O plano $\alpha$ é paralelo ao que
+contém a Linha do Equador.
+
+<img class="m-auto" src="/assets/globo-enem.png" width="350" />
+
+A vista superior da projeção ortogonal sobre o plano $\alpha$
+dessas duas trajetórias é:
+
+*Resposta:*
+
+<img src="/assets/globo-enem-resposta.png" width="50" />
+
+
+---
+
+## Exercícios - ENEM - 2022 (continuação)
+
+---
+
+## Exercícios - ENEM - 2022
+
+Uma empresa produz e vende um tipo de chocolate, maciço, em formato de cone circular reto com as medidas do diâmetro da base e da altura iguais a 8 cm e 10 cm, respectivamente, como apresenta a figura.
+
+<img class="m-auto" src="/assets/cone-enem.png" width="300" />
+
+Devido a um aumento de preço dos ingredientes utilizados na produção desse chocolate, a empresa decide produzir esse mesmo tipo de chocolate com um volume 19% menor, no mesmo formato de cone circular reto com altura de 10 cm. Para isso, a empresa produzirá esses novos chocolates com medida do raio da base, em centímetro, igual a:
+
+---
+
+## Exercícios - ENEM - 2022 (continuação)
+
+... Para isso, a empresa produzirá esses novos chocolates com medida do raio da base, em centímetro, igual a:
+
+A) 1,52.
+
+B) 3,24.
+
+C) 3,60.
+
+D) 6,48.
+
+E) 7,20.
+
+---
+
+## Exercícios - ENEM 2022
+
+Peças metálicas de aeronaves abandonadas em
+aeroportos serão recicladas. Uma dessas peças é
+maciça e tem o formato cilíndrico, com a medida do raio
+da base igual a 4 cm e a da altura igual a 50 cm. Ela será
+derretida, e o volume de metal resultante será utilizado
+para a fabricação de esferas maciças com diâmetro de
+1 cm, a serem usadas para confeccionar rolamentos.
+Para estimar a quantidade de esferas que poderão ser
+produzidas a partir de cada uma das peças cilíndricas,
+admite-se que não ocorre perda de material durante o
+processo de derretimento.
+
+Quantas dessas esferas poderão ser obtidas a partir de
+cada peça cilíndrica?
+
+---
+
+## Exercícios - ENEM - 2022 (continuação)
+
+*Resposta: 4800*
+
+---
+
+
+## Revisão Geral
+
+|  Sólido  | Área | Volume |
+|:--------:|:----:|:------:|
+|  Prisma  |  $A_b + A_l$  |   $V = A_{b}h$   |
+| Pirâmide |  $A_b + A_l$  |   $V = \frac{A_{b}h}{3}$   |
+| Cilindro |  $A_b + A_l$  |   $V = A_{b}h$   |
+|   Cone   |  $A_b + A_l$  |   $V = \frac{A_{b}h}{3}$   |
+|  Esfera  |  $A=4 \pi R^2$  |   $V = \frac{4 \pi R^3}{3}$   |
+
+
+---
+
+## Dicas
+
+<v-clicks>
+
+### Gerais
+
+- Horário, documentos, caneta...
+- Começar pelas questões mais fáceis
+- Marcar questões no final
+- Calma!
+
+### Ao resolver as questões
+
+  1. Identifique o que o problema pede (área, proporção, comprimento, volume)
+  2. Anote os dados
+  3. Desenhe à vontade!
+  4. Elabore as etapas e fórmulas (se necessário)
+  5. Resolva as equações
+  6. Verifique o resultado (valor e unidade)
+
+</v-clicks>
+
+---
 layout: center
 ---
 
-## Obrigado!
+## Obrigado e Boa Sorte!
