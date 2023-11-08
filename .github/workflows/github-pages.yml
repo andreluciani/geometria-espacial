@@ -40,7 +40,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Install slidev
-        run: npm i -g @slidev/cli
+        run: npm i -g @slidev/cli @slidev/theme-default
 
       - name: Add Umami script
         run: touch index.html && node umami.js
