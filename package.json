@@ -9,19 +9,19 @@
   },
   "dependencies": {
     "@janvorisek/drie": "^1.0.0-alpha-1.48",
-    "@slidev/cli": "^0.42.5",
+    "@slidev/cli": "^0.45.0",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "cheerio": "^1.0.0-rc.12",
-    "three": "^0.155.0",
-    "vue-confetti-explosion": "^1.0.2",
-    "postcss": ">=8.4.31"
+    "postcss": ">=8.4.31",
+    "three": "^0.159.0",
+    "vue-confetti-explosion": "^1.0.2"
   },
   "devDependencies": {
     "@iconify-json/ci": "^1.1.9",
     "@iconify-json/fa6-solid": "^1.1.13",
     "@iconify-json/octicon": "^1.1.45",
-    "@types/three": "^0.154.0",
+    "@types/three": "^0.159.0",
     "playwright-chromium": "^1.36.1",
     "postcss": ">=8.4.31"
   }
