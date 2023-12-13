@@ -6,62 +6,56 @@ Slides utilizados para aulas de Geometria Espacial
 
 ## Conteúdos Abordados
 
-### Introdução
+- Introdução
+  - Conceitos de Geometria Plana
+  - Conceitos de Geometria Espacial
+  - Poliedros
+  - Sólidos de Platão
+  - Relação de Euler
+  - Corpos Redondos
+  - Projeções Ortogonais
 
-- [x] Conceitos de Geometria Plana
-- [x] Conceitos de Geometria Espacial
-- [x] Poliedros
-- [x] Sólidos de Platão
-- [x] Relação de Euler
-- [x] Corpos Redondos
-- [x] Projeções Ortogonais
+- Prismas
+  - Definição
+  - Nomenclatura
+  - Planificação e Áreas
+  - Volume
+  - Projeções
+  - Tronco de Prisma
 
-### Prismas
+- Pirâmides
+  - Definição
+  - Nomenclatura
+  - Planificação e Áreas
+  - Volume
+  - Projeções
+  - Tronco de Pirâmide
 
-- [x] Definição
-- [x] Nomenclatura
-- [x] Planificação e Áreas
-- [x] Volume
-- [x] Projeções
-- [x] Tronco de Prisma
+- Cilindro
+  - Definição
+  - Nomenclatura
+  - Planificação e Áreas
+  - Volume
+  - Projeções
+  - Tronco de Cilindro
 
-### Pirâmides
+- Cone
+  - Definição
+  - Nomenclatura
+  - Planificação e Áreas
+  - Volume
+  - Projeções
+  - Tronco de Cone
 
-- [x] Definição
-- [x] Nomenclatura
-- [x] Planificação e Áreas
-- [x] Volume
-- [x] Projeções
-- [x] Tronco de Pirâmide
-
-### Cilindro
-
-- [x] Definição
-- [x] Nomenclatura
-- [x] Planificação e Áreas
-- [x] Volume
-- [x] Projeções
-- [x] Tronco de Cilindro
-
-### Cone
-
-- [x] Definição
-- [x] Nomenclatura
-- [x] Planificação e Áreas
-- [x] Volume
-- [x] Projeções
-- [x] Tronco de Cone
-
-### Esfera
-
-- [x] Definição
-- [x] Nomenclatura
-- [x] Planificação e Áreas
-- [x] Volume
-- [x] Projeções
+- Esfera
+  - Definição
+  - Nomenclatura
+  - Planificação e Áreas
+  - Volume
+  - Projeções
 
 ## Para iniciar o ambiente de desenvolvimento
 
 - `npm install`
 - `npm run dev`
-- Visitar http://localhost:3030
+- Acessar http://localhost:3030
